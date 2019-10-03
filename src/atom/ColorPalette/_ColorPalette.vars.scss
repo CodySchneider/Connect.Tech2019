@@ -1,0 +1,68 @@
+// If single color definitions are required, they should go at the top of this file.
+// $borderColor: #858585;
+
+// Prefer adding new colors to existing maps, or create a new map for additional palettes
+$actions: (
+  primary: #4E7AFF,
+  secondary: #2247B6,
+  nonAction: #263779
+);
+
+$icons: (
+  themeLight: #FFFFFF,
+  themeDark: #2B2B2B,
+  themeGray: #757575,
+  themeAction: #4E7AFF,
+  moon: #E3E3E3,
+  clouds: #D3D3D3,
+  precip: #6ADEF8,
+  sunLightning: #EBDB00
+);
+
+$text: (
+  dark: #000,
+  medium: #2B2B2B,
+  light: #757575,
+  default: #2B2B2B,
+  secondary: #757575,
+  tertiary: #3A3A3A,
+  overlay: #FFFFFF,
+  precip: #263779,
+  ad: #9B9B9B
+);
+
+$fills: (
+  background: #FFFFFF,
+  night: #F2F2F2,
+  lines: #EDEDED,
+  borderColor: #DEDEDE,
+  shadow: rgba(0, 0, 0, 0.2),
+  imageOverlay: rgba(0, 0, 0, 0.15),
+  modal: rgba(0,0,0,.8),
+  tableBody: #F1F1F1,
+  textBgGray: #F1F1F1,
+  favorite: #FDC107
+);
+
+$weather: (
+  sunLightning: #EBDB00,
+  precip: #6ADEF8,
+  clouds: #D3D3D3,
+  moon: #E3E3E3
+);
+
+$severe: (
+  warning1: #da291c,
+  warning2: #9B2743,
+  warning3: #641D31,
+  watch: #FC4F00
+);
+
+$chartLevels: (
+  na: #A0A0A0,
+  none: #308020,
+  low: #78C810,
+  moderate: #E8C818,
+  high: #E88010,
+  veryHigh: #E82808
+);

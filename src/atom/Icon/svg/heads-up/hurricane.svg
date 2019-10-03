@@ -1,0 +1,6 @@
+<svg aria-hidden="true" viewBox="0 0 24 24">
+  <g transform="translate(3.5 1)" fill-rule="nonzero">
+    <path stroke="currentColor" stroke-width="1.5" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M15.799.273a.995.995 0 0 1 1.254.133.977.977 0 0 1-.012 1.377l-.042.041-4.674 4.684a5.858 5.858 0 0 1-.658 9.606l-.095.053-.06.034a2.77 2.77 0 0 1-.241.124l-9.593 5.543a.985.985 0 0 1-1.264-1.504l.04-.04 4.662-4.672a5.858 5.858 0 0 1 .667-9.601A6.72 6.72 0 0 0 5.877 6l.061-.033c.113-.063.186-.101.24-.125l9.62-5.568z"/>
+    <circle fill="#FFF" cx="8.72" cy="11.118" r="2.834"/>
+  </g>
+</svg>

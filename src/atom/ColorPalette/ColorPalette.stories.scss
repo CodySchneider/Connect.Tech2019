@@ -1,0 +1,44 @@
+@import "../ColorPalette/_ColorPalette.vars.scss";
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Mixins.scss";
+@import "SassUtils/_Variables.vars.scss";
+
+:root {
+  --border-color: #{map-get($fills, borderColor)};
+}
+
+.palette {
+  margin: 20px;
+}
+
+.paletteTitle {
+  font-size: pxToRem(22px);
+}
+
+.swatchList {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.swatch {
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  min-width: 100px;
+}
+
+.swatchColor {
+  height: 50px;
+  width: 100%;
+}
+
+.swatchDescription {
+  padding: 5px;
+  border-top: 1px solid var(--border-color);
+}
+
+.swatchHexCode {
+  color: map-get($text, secondary);
+  font-size: pxToRem(12px);
+}

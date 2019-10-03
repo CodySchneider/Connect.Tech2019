@@ -1,0 +1,24 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+
+// ************ Layout Vars
+
+$paddingContainer: 16px; // Default padding for container
+$paddingBlock: 10px 16px; // Default padding for block elements
+$paddingInline: 0px 15px; // Default padding for inline elements
+$defaultBorder: 1px solid map-get($fills, borderColor);
+$defaultRadius: 6px;
+$defaultShadow: 0 0 12px 0 map-get($fills, shadow);
+
+// ************ Breakpoint vars
+$screen-xs-max: 374px;
+$screen-sm-min: $screen-xs-max + 1;
+
+// This has all been deprecated in @twc/css-helpers
+// Inserted here to get ads up and running
+$screen-md-min: 992px;
+$screen-sm-max: $screen-md-min - 1;
+$screen-xs: 480px;
+$screen-milli: 360px;
+
+
+$themeBackgroundDefault: linear-gradient(180deg, #0A7B98 0%, #4CAFB5 100%);

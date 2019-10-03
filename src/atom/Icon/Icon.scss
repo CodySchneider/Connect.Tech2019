@@ -1,0 +1,71 @@
+@import "../ColorPalette/_ColorPalette.vars.scss";
+
+.icon {
+  display: inline-block;
+  height: auto;
+  width: 24px;
+
+  [dir="rtl"] & {
+    &[name*="right"],
+    &[name*="left"] {
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.actionTheme {
+  // For simpler icons.
+  fill: map-get($icons, themeAction);
+
+  // These svgs svgs use the currentColor property.
+  // For more complex icons that require
+  // both stroke and fill to be the same color,
+  // or might have stroke: none or fill: none
+  // in specific paths.
+  color: map-get($icons, themeAction);
+}
+
+.darkTheme {
+  fill: map-get($icons, themeDark);
+  color: map-get($icons, themeDark);
+}
+
+.lightTheme {
+  fill: map-get($icons, themeLight);
+  color: map-get($icons, themeLight);
+
+  --color-moon: #{map-get($icons, themeLight)};
+  --color-cloud: #{map-get($icons, themeLight)};
+  --color-star: #{map-get($icons, themeLight)};
+  --color-fog: #{map-get($icons, themeLight)};
+  --color-wind: #{map-get($icons, themeLight)};
+  --color-sun: #{map-get($icons, themeLight)};
+  --color-lightning: #{map-get($icons, themeLight)};
+  --color-snowflake: #{map-get($icons, themeLight)};
+  --color-hail: #{map-get($icons, themeLight)};
+  --color-thunderstorm-mask: #{map-get($icons, themeDark)};
+}
+
+.grayTheme {
+  fill: map-get($icons, themeGray);
+  color: map-get($icons, themeGray);
+}
+
+// For Weather Icons
+.fullTheme {
+  --color-moon: #{map-get($icons, moon)};
+  --color-star: #{map-get($icons, moon)};
+  --color-cloud: #{map-get($icons, clouds)};
+  --color-na: #{map-get($icons, clouds)};
+  --color-fog: #{map-get($icons, clouds)};
+  --color-hail: #{map-get($icons, clouds)};
+  --color-tornado: #{map-get($icons, clouds)};
+  --color-wind: #{map-get($icons, clouds)};
+  --color-storm: #{map-get($icons, clouds)};
+
+  --color-lightning: #{map-get($icons, sunLightning)};
+  --color-sun: #{map-get($icons, sunLightning)};
+  --color-drop: #{map-get($icons, precip)};
+  --color-snowflake: #{map-get($icons, clouds)};
+  --color-thunderstorm-mask: #{map-get($icons, themeDark)};
+}

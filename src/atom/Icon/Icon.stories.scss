@@ -1,0 +1,61 @@
+// @import "@wxu/sass-utilities/src/_Functions.scss";
+
+h1 {
+  padding-left: 20px;
+  margin: 10px 0 2px 0;
+  color: #333;
+  font-size: pxToRem(22px);
+}
+
+.customIcon {
+  height: 50%;
+  width: 40px;
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+
+.iconContainer {
+  display: inline-block;
+}
+
+// Overwrite default 24px width so that
+// icon size can change be changed with the slider
+// in storybook.
+.invidivualIcon {
+  width: auto;
+  min-width: 0;
+}
+
+.allIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 0 5px;
+  border: solid 1px #c5c7ca;
+  border-radius: 5%;
+  width: 95px;
+  height: 115px;
+  word-break: break-word;
+  background: #f6f9fc;
+}
+
+.darkBackground {
+  background: #ababab;
+}
+
+.setContainer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 10px;
+}
+
+.iconName {
+  display: block;
+  height: 50%;
+  text-align: center;
+  font-size: pxToRem(10px);
+  line-height: 1.25;
+  padding-top: 10px;
+  box-sizing: border-box;
+}

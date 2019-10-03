@@ -1,0 +1,23 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+
+// Theme Mixins
+
+@mixin defaultShadow {
+  box-shadow: 0 0 12px 0 #{map-get($fills, shadow)};
+}
+
+@mixin defaultGlow {
+  box-shadow: 0 0 5px 0 rgba(map-get($actions, primary),0.8);
+}
+
+@mixin navShadow {
+  box-shadow: 0px -4px 5px -2px map-get($fills, shadow);
+}
+
+@mixin borderRadius {
+  border-radius: 6px;
+}
+
+@mixin verticalGradient($startColor, $endColor) {
+  background: linear-gradient($startColor, $endColor);
+}

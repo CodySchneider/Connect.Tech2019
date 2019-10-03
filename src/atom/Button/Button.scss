@@ -1,0 +1,64 @@
+@import "../ColorPalette/_ColorPalette.vars.scss";
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Mixins.scss";
+@import "SassUtils/_Variables.vars.scss";
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  line-height: 1.15;
+  border-radius: 16px;
+  font-size: pxToRem(13px);
+  font-weight: bold;
+  padding: 8px 14px;
+  margin: 5px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: map-get($actions, primary);
+  &:focus {
+    outline: map-get($actions, primary) auto 5px;
+  }
+}
+
+.primary {
+  composes: button;
+  background-color: map-get($actions, primary);
+  border: 1px solid map-get($actions, primary);
+  color: map-get($text, overlay);
+  &:active,
+  &:hover,
+  &:focus {
+    @include defaultGlow;
+  }
+}
+
+.secondary {
+  composes: button;
+  background-color: map-get($fills, background);
+  border: 1px solid map-get($fills, borderColor);
+  color: map-get($actions, primary);
+  &:active,
+  &:hover,
+  &:focus {
+    @include defaultShadow;
+  }
+}
+
+.default {
+  border: none;
+  background: none;
+  color: map-get($actions, primary);
+  text-decoration: none;
+}
+
+.iconOnly {
+  border-radius: 50%;
+  padding: 5px;
+  line-height: 0;
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
