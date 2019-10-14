@@ -1,0 +1,35 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Variables.vars.scss";
+@import "SassUtils/_Mixins.scss";
+
+.Card {
+  margin: 0;
+}
+
+.CardHeader {
+  padding-bottom: 10px !important;
+  padding-left: 26px !important;
+}
+
+.AlertHeadline {
+  padding: 0px 26px 10px 26px !important;
+}
+
+.DisclosureList {
+  padding: 0 10px 10px 10px;
+}
+
+.ad {
+  min-height: 250px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.adLabel {
+  font-size: pxToRem(10px);
+  color: map-get($text, light);
+  text-align: right;
+  max-width: 300px;
+  margin: 0 auto;
+}

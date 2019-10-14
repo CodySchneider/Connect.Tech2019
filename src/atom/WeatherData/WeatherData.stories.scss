@@ -1,0 +1,12 @@
+@import "atom/ColorPalette/_ColorPalette.vars.scss";
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Mixins.scss";
+@import "SassUtils/_Variables.vars.scss";
+
+.storyWrapper {
+  font-size: pxToRem(20px);
+  svg {
+    width: 20px !important;
+    height: auto;
+  }
+}

@@ -1,0 +1,72 @@
+@import "atom/ColorPalette/_ColorPalette.vars.scss";
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Mixins.scss";
+@import "SassUtils/_Variables.vars.scss";
+
+// Temporary colors until new package for alert colors is ported over
+$red: #DA291C;
+$orange: #e6731f;
+$yellow: #e0aa46;
+
+.AlertHeadline {
+  display: flex;
+  align-items: center;
+}
+
+.alertText {
+  font-size: pxToRem(16px);
+  margin: 0;
+  line-height: 1.25;
+  color: map-get($text, medium);
+  .light & {
+    color: white;
+  }
+}
+
+.alertCountWrapper {
+  display: flex;
+  margin-left: 15px;
+  border-radius: 10px;
+  align-items: center;
+  color: white;
+  padding: 0 4px 0 8px;
+  &.red {
+    background: $red;
+  }
+  &.orange {
+    background: $orange;
+  }
+  &.yellow {
+    background: $yellow;
+  }
+}
+
+.alertCount {
+  font-size: pxToRem(14px);
+}
+
+.arrowIcon {
+  width: 12px !important;
+  flex-shrink: 0;
+  .dark & {
+    fill: map-get($text, medium);
+  }
+  .dark .alertCountWrapper & {
+    fill: map-get($text, overlay);
+  }
+}
+
+.alertIcon {
+  flex-shrink: 0;
+  width: 18px !important;
+  margin-right: 10px;
+  &.red {
+    color: $red;
+  }
+  &.orange {
+    color: $orange;
+  }
+  &.yellow {
+    color: $yellow;
+  }
+}

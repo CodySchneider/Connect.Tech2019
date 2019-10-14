@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "@wxu/in-viewport",
+  "version": "1.0.0",
+  "description": "Package to determine if a DOM node is within the browser viewport",
+  "main": "src/index.js",
+  "dependencies": {}
+}

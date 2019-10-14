@@ -1,0 +1,9 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Variables.vars.scss";
+@import "SassUtils/_Mixins.scss";
+
+.background {
+  background-image: linear-gradient(#05336B 9%, #0D5AB9);
+  padding: 20px 0;
+}

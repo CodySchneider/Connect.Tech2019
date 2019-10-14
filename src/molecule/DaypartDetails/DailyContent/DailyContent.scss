@@ -1,0 +1,32 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Variables.vars.scss";
+@import "SassUtils/_Mixins.scss";
+
+.ConditionSummary {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.Condition {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.temp {
+  font-size: pxToRem(48px);
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.weatherIcon {
+  width: 48px !important;
+}
+
+.narrative {
+  margin: 0 0 14px 0;
+  line-height: 1.15;
+  font-size: pxToRem(16px);
+}

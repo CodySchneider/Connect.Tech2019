@@ -1,0 +1,59 @@
+@import "atom/ColorPalette/_ColorPalette.vars.scss";
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Mixins.scss";
+@import "SassUtils/_Variables.vars.scss";
+
+.Summary {
+  list-style: none;
+  cursor: pointer;
+  padding: $paddingBlock;
+  box-sizing: border-box;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.SummaryDefault {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.SummaryIcon {
+  fill: map-get($actions, primary);
+  width: 18px !important;
+  flex-shrink: 0;
+}
+
+/* stylelint-disable max-nesting-depth */
+.themeList {
+  border-top: $defaultBorder;
+  .Summary {
+    color: map-get($text, default);
+    &:focus {
+      outline: 1px dotted #212121;
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+  }
+
+  &[open] > .Summary:not(.hideBorderOnSummaryOpen) {
+    border-bottom: $defaultBorder;
+  }
+  &:first-child {
+    border-top: 0;
+  }
+  &.outerBorder {
+    &:first-child {
+      border-top: $defaultBorder;
+    }
+    &:last-child {
+      border-bottom: $defaultBorder;
+    }
+  }
+}
+/* stylelint-enable max-nesting-depth */
+
+.contentBgGray {
+  background: map-get($fills, textBgGray);
+}

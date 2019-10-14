@@ -1,0 +1,31 @@
+@import "atom/ColorPalette/_ColorPalette.vars.scss";
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Mixins.scss";
+@import "SassUtils/_Variables.vars.scss";
+
+.card {
+  margin: 10px;
+  overflow: hidden;
+  @include borderRadius;
+  @include defaultShadow;
+  background-color: map-get($fills, background);
+}
+
+.cardHeader {
+  padding: $paddingContainer;
+}
+
+.cardHeading {
+  font-size: pxToRem(18px);
+  margin: 0;
+  flex-grow: 1;
+  color: map-get($text, dark);
+}
+
+.cardFooter {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $paddingContainer 11px 11px;
+}

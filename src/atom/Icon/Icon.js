@@ -104,7 +104,7 @@ Icon.propTypes = {
   /**
    * Determines color of your icon
    */
-  theme: PropTypes.oneOf(['action', 'dark', 'light', 'gray']),
+  theme: PropTypes.oneOf(['action', 'dark', 'light', 'gray', 'full']),
   /**
    * Pass through class
    */

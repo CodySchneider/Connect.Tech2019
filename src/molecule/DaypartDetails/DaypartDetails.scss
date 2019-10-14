@@ -1,0 +1,19 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Variables.vars.scss";
+@import "SassUtils/_Mixins.scss";
+
+.Summary {
+  width: 100%;
+  padding: 3px 16px;
+}
+
+.Content {
+  padding: 5px 15px 15px 15px;
+}
+
+.daypartName {
+  margin: 20px 0 0 0;
+  font-size: pxToRem(14px);
+  font-weight: normal;
+}

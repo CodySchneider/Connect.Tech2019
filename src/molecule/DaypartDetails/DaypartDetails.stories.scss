@@ -1,0 +1,6 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Variables.vars.scss";
+@import "SassUtils/_Mixins.scss";
+
+// This file should contain only styles specific to your story. Basically any Storybook specific code that you don't want to have in production.

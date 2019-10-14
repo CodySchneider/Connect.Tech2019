@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "@wxu/translations",
+  "version": "1.0.0",
+  "description": "Utility components for dealing with translations",
+  "main": "src",
+  "dependencies": {}
+}

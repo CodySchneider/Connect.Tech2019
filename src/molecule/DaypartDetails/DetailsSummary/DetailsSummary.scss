@@ -1,0 +1,79 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Variables.vars.scss";
+@import "SassUtils/_Mixins.scss";
+
+.DetailsSummary {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.daypartName {
+  flex-basis: 62px;
+  flex-shrink: 0;
+  font-weight: normal;
+  font-size: pxToRem(14px);
+  margin: 0;
+}
+
+.temperature {
+  flex-basis: 80px;
+  flex-shrink: 0;
+  padding-left: 26px;
+  display: flex;
+  align-items: center;
+  [open] .fadeOnOpen & {
+    color: map-get($text, light);
+  }
+}
+
+.tempValue {
+  font-size: pxToRem(24px);
+  font-weight: bold;
+}
+
+.highTempValue {
+  font-size: pxToRem(20px);
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.lowTempValue {
+  font-size: pxToRem(14px);
+  margin-left: 2px;
+}
+
+.condition {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  [open] .fadeOnOpen & {
+    opacity: 0.5;
+  }
+}
+
+.wxIcon {
+  width: 40px !important;
+  margin-right: 6px;
+}
+
+.precip {
+  flex-basis: 50px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: pxToRem(14px);
+  [open] .fadeOnOpen & {
+    color: map-get($text, light);
+  }
+}
+
+.precipIcon {
+  width: 6px !important;
+  margin-right: 5px;
+  fill: map-get($icons, precip);
+}

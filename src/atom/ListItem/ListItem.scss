@@ -1,0 +1,35 @@
+@import 'atom/ColorPalette/_ColorPalette.vars.scss';
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Mixins.scss";
+@import "SassUtils/_Variables.vars.scss";
+
+.listItem {
+  display: block;
+  text-decoration: none;
+  padding: $paddingBlock;
+  border-top: $defaultBorder !important;
+  color: map-get($text, default);
+  box-sizing: border-box;
+  &:focus {
+    background: #4E7AFF;
+    color: white;
+    outline: 0;
+  }
+  &:first-child {
+    border-top: 0 !important;
+  }
+  &.outerBorder {
+    &:first-child {
+      border-top: $defaultBorder !important;
+    }
+    &:last-child {
+      border-bottom: $defaultBorder !important;
+    }
+  }
+  @at-root { // wonky syntax required to use & with html element
+    button#{&} {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

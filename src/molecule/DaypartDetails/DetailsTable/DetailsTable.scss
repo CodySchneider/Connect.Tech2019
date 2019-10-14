@@ -1,0 +1,54 @@
+@import "atom/ColorPalette/_ColorPalette.vars.scss";
+@import "SassUtils/_Functions.scss";
+@import "SassUtils/_Variables.vars.scss";
+@import "SassUtils/_Mixins.scss";
+
+.DetailsTable {
+  margin: 0;
+  padding: 15px;
+  border: 1px solid map-get($fills, borderColor);
+  display: flex;
+  flex-flow: row wrap;
+  @include borderRadius;
+}
+
+.listItem {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+  border-top: 1px solid map-get($fills, borderColor);
+  padding-top: 10px;
+  margin-top: 10px;
+  &:nth-child(-n+2) {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  flex-shrink: 0;
+  width: 20px !important;
+}
+
+.field {
+  width: calc(100% - 34px); // Hack to fix German word-wrapping
+  line-height: 1.2;
+}
+
+.label {
+  display: block;
+  font-size: pxToRem(13px);
+  overflow-wrap: break-word;
+}
+
+.value {
+  display: block;
+  font-weight: bold;
+  font-size: pxToRem(16px);
+}
