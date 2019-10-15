@@ -18,16 +18,31 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "@storybook/addon-a11y": "^5.2.3",
+    "@storybook/addon-jest": "^5.2.3",
     "@storybook/addon-knobs": "^5.2.3",
     "@storybook/addons": "^5.2.3",
     "@storybook/react": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "jest-environment-puppeteer": "^4.3.0",
+    "jest-image-snapshot": "^2.11.0",
+    "jest-puppeteer": "^4.3.0",
+    "jsdom": "^15.1.1",
+    "puppeteer": "^1.20.0",
+    "react-test-renderer": "^16.10.2",
+    "start-server-and-test": "^1.10.5",
     "storybook-readme": "^5.0.8"
   },
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook -p 3000 -s public",
+    "jest": "jest --json --outputFile=.jest-test-results.json -c jest.config.js",
+    "jest:storybook": "start-server-and-test storybook http-get://localhost:3000 jest"
   }
 }

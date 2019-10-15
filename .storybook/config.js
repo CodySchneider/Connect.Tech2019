@@ -7,6 +7,8 @@ import {
 import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
 import { addReadme, configureReadme } from 'storybook-readme';
+import { withTests } from '@storybook/addon-jest';
+import results from '../.jest-test-results.json';
 import { WeatherIconSprite } from 'atom/Icon/WeatherIconSprite';
 import './normalize.css';
 import { enUS } from './__mocks__/i18n.const';
@@ -29,6 +31,9 @@ configureReadme({
     escapeHTML: false,
   }),
   addReadme,
+  withTests({
+    results,
+  }),
 ].forEach(addDecorator);
 
 addDecorator(story => (
