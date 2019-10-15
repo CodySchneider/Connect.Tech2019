@@ -61,14 +61,14 @@ export class Image extends PureComponent {
   constructor(props) {
     super(props);
     // Error messaging for fun and profit
-    if (__DEV__) {
+    // if (__DEV__) {
       if (typeof props.ratio !== 'string') {
         throw new Error('You need to provide a blessed aspect ratio of ["16:9", "4:3", "1:1"]');
       }
       if (!props.lazy && !props.width && (props.srcSet !== false && !props.sizes)) {
         throw new Error('If you are not lazy loading, you need to provide width and sizes props for your image srcset.');
       }
-    }
+    // }
 
     // Setup ref for attaching handlers
     this.imageRef = React.createRef();

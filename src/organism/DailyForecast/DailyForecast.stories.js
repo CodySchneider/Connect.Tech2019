@@ -59,4 +59,5 @@ stories
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
+    jest: ['DailyForecast.test.js'],
   });
