@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react';
 import {
   withKnobs,
 } from '@storybook/addon-knobs';
-// import { withViewport } from '@storybook/addon-viewport';
-// import { HealthActivitiesListItem } from 'molecule/HealthActivitiesListItem/HealthActivitiesListItem';
 import { ListItem } from './ListItem';
 
 import readme from './README.md';
@@ -147,35 +145,3 @@ stories.add(
     jest: ['ListGroup.test.js'],
   },
 );
-
-// stories.add(
-//   'Link List with Child Content',
-//   () => (
-//     <>
-//       <ListItem href="http://weather.com">
-//         <HealthActivitiesListItem
-//           type="allergy"
-//           value={30}
-//           heading="Allergy"
-//           description="Low pollen in your area today"
-//           href="https://weather.com/forecast/allergy/l/USGA0028:1:US"
-//         />
-//       </ListItem>
-//       <ListItem href="http://weather.com">
-//         <HealthActivitiesListItem
-//           type="coldflu"
-//           value={70}
-//           heading="Cold & Flu"
-//           description="Very high SickScore today"
-//           href="https://weather.com/forecast/cold-flu/l/USGA0028:1:US"
-//         />
-//       </ListItem>
-//     </>
-//   ),
-//   {
-//     readme: {
-//       sidebar: `${readme}<!-- PROPS -->`,
-//     },
-//     jest: ['ListGroup.test.js'],
-//   },
-// );

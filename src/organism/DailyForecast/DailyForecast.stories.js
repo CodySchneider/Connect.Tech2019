@@ -16,7 +16,6 @@ import {
 import readme from './README.md';
 import styles from './DailyForecast.stories.scss';
 
-const stories = storiesOf('Organisms (Modules)|DailyForecast', module);
 const dayLimitOptions = {
   range: true,
   min: 1,
@@ -29,6 +28,8 @@ const adIndexOptions = {
   max: 15,
   step: 1,
 };
+
+const stories = storiesOf('Organisms (Modules)|DailyForecast', module);
 
 stories
   .add('Default', () => {
