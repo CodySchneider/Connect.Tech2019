@@ -43,6 +43,8 @@
   "scripts": {
     "storybook": "start-storybook -p 3000 -s public",
     "jest": "jest --json --outputFile=.jest-test-results.json -c jest.config.js",
-    "jest:storybook": "start-server-and-test storybook http-get://localhost:3000 jest"
+    "jest:update": "jest --json --outputFile=.jest-test-results.json -c jest.config.js -u",
+    "jest:storybook": "start-server-and-test storybook http-get://localhost:3000 jest",
+    "jest:storybook:update": "start-server-and-test storybook http-get://localhost:3000 jest:update"
   }
 }
