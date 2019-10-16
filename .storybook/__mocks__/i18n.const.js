@@ -47,6 +47,9 @@ export const enUS = {
       visibility: 'Visibility',
       wind: 'Wind',
     },
+    'wxu-ten-day': {
+      tendayTitle: '10 Day Weather',
+    }
   },
   'ar': {
     'wxu-urls': {

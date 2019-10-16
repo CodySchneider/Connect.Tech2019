@@ -27,7 +27,7 @@ export class DailyForecast extends PureComponent {
     return (
       <Card
         data-testid="DailyForecast"
-        title={t('wxu-ten-day', 'tendayTitle', location10DayArgs)}
+        title={t('wxu-ten-day', 'tendayTitle')}
         className={styles.Card}
         cardHeaderClass={styles.CardHeader}
       >
