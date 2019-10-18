@@ -13,18 +13,18 @@ import { WeatherIconSprite } from 'atom/Icon/WeatherIconSprite';
 import './normalize.css';
 import { enUS } from './__mocks__/i18n.const';
 
+// Add translation mock
 window.__i18n = enUS;
-window.__DEV__ = true;
 
 configureReadme({
   /**
    * Wrapper for story. Usually used to set some styles
-   * React: React.ReactNode
-   * Vue: Vue component
+   * This removes some weird default wrapper from Readme addon
    */
   StoryPreview: ({ children }) => <div>{children}</div>,
 });
 
+// Initialize Addons
 [
   withA11y,
   withKnobs({
@@ -36,6 +36,7 @@ configureReadme({
   }),
 ].forEach(addDecorator);
 
+// Example of how to add a wrapper to every Story
 addDecorator(story => (
   <div>
     <WeatherIconSprite />
@@ -43,6 +44,7 @@ addDecorator(story => (
   </div>
 ));
 
+// All the available Storybook config options for your hacking pleasure
 addParameters({
   readme: {
     codeTheme: 'hopscotch',
@@ -125,9 +127,5 @@ addParameters({
 
 });
 
-addParameters({
-});
-
+// Tell webpack where your $417 is
 configure(require.context('../src', true, /\.stories\.js$/), module);
-// configure(require.context('../src/molecule', true, /\.stories\.js$/)};
-// configure(require.context('../src/organism', true, /\.stories\.js$/)};
