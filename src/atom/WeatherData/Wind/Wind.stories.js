@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   text,
   select,
@@ -36,8 +35,11 @@ const windCardinalRange = [
   'CALM',
 ];
 
-storiesOf('Atoms|WeatherData/Wind', module)
-  .add('English', () => {
+export default {
+  title: 'Atoms|WeatherData/Wind',
+};
+
+export const english = () => {
     const units = select('System of measurement', ['e', 'm', 'h'], 'e');
     const windDirection = number('Wind Direction', 0, windDirectionRange);
     const windSpeed = number('Wind speed', 133);
@@ -51,15 +53,18 @@ storiesOf('Atoms|WeatherData/Wind', module)
         />
       </div>
     );
-  },
-  {
+  };
+
+english.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/Wind', module)
-  .add('Metric', () => {
+
+export const metric = () => {
     const units = select('System of measurement', ['e', 'm', 'h'], 'm');
     const windSpeed = text('Wind speed', 5);
     const windDirection = number('Wind Direction', 0, windDirectionRange);
@@ -73,15 +78,18 @@ storiesOf('Atoms|WeatherData/Wind', module)
         />
       </div>
     );
-  },
-  {
+  };
+
+metric.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/Wind', module)
-  .add('Hybrid Units', () => {
+
+export const hybridUnits = () => {
     const units = select('System of measurement', ['e', 'm', 'h'], 'h');
     const windDirection = number('Wind Direction', 0, windDirectionRange);
     const windSpeed = number('Wind speed', 5);
@@ -95,15 +103,18 @@ storiesOf('Atoms|WeatherData/Wind', module)
         />
       </div>
     );
-  },
-  {
+  };
+
+hybridUnits.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/Wind', module)
-  .add('Wind Direction - West', () => {
+
+export const windDirectionWest = () => {
     const units = select('System of measurement', ['e', 'm', 'h'], 'h');
     const windDirection = number('Wind Direction', 270, windDirectionRange);
     const windSpeed = number('Wind speed', 5);
@@ -117,15 +128,20 @@ storiesOf('Atoms|WeatherData/Wind', module)
         />
       </div>
     );
-  },
-  {
+  };
+
+windDirectionWest.story = {
+  name: 'Wind Direction - West',
+
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/Wind', module)
-  .add('Wind Cardinal Direction', () => {
+
+export const windCardinalDirection = () => {
     const units = select('System of measurement', ['e', 'm', 'h'], 'h');
     const windDirection = select('Cardinal Direction', windCardinalRange, windCardinalRange[0]);
     const windSpeed = number('Wind speed', 5);
@@ -139,15 +155,18 @@ storiesOf('Atoms|WeatherData/Wind', module)
         />
       </div>
     );
-  },
-  {
+  };
+
+windCardinalDirection.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/Wind', module)
-  .add('Wind Cardinal Direction & Icon', () => {
+
+export const windCardinalDirectionIcon = () => {
     const units = select('System of measurement', ['e', 'm', 'h'], 'h');
     const windDirection = select('Cardinal Direction', windCardinalRange, windCardinalRange[0]);
     const windDegrees = number('Wind Degrees', 180, windDirectionRange);
@@ -163,15 +182,20 @@ storiesOf('Atoms|WeatherData/Wind', module)
         />
       </div>
     );
-  },
-  {
+  };
+
+windCardinalDirectionIcon.story = {
+  name: 'Wind Cardinal Direction & Icon',
+
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/Wind', module)
-  .add('Undefined', () => {
+
+export const undefined = () => {
     const units = select('System of measurement', ['e', 'm', 'h'], 'h');
 
     return (
@@ -183,9 +207,12 @@ storiesOf('Atoms|WeatherData/Wind', module)
         />
       </div>
     );
-  },
-  {
+  };
+
+undefined.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};

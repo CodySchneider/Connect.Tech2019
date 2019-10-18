@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  storiesOf,
-} from '@storybook/react';
 import DetailsTable from './DetailsTable';
 import {
   WEATHER_DATA_RAIN,
@@ -14,74 +11,74 @@ import {
 } from '../DaypartDetails.stories.const';
 import readme from './DetailsTable.md';
 
-const stories = storiesOf('Molecules|DaypartDetails/DetailsTable', module);
+export default { title: 'Molecules|DaypartDetails/DetailsTable'};
 
-stories
-  .add('All Fields', () => (
-    <DetailsTable {...WEATHER_DATA_ALL} />
-  ),
-  {
+export const allFields = () => <DetailsTable {...WEATHER_DATA_ALL} />;
+
+allFields.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Rain', () => (
-    <DetailsTable {...WEATHER_DATA_RAIN} />
-  ),
-  {
+export const rain = () => <DetailsTable {...WEATHER_DATA_RAIN} />;
+
+rain.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Snow', () => (
-    <DetailsTable {...WEATHER_DATA_SNOW} />
-  ),
-  {
+export const snow = () => <DetailsTable {...WEATHER_DATA_SNOW} />;
+
+snow.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Wintry Mix', () => (
-    <DetailsTable {...WEATHER_DATA_WINTRYMIX} />
-  ),
-  {
+export const wintryMix = () => <DetailsTable {...WEATHER_DATA_WINTRYMIX} />;
+
+wintryMix.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Day', () => (
-    <DetailsTable {...WEATHER_DATA_DAY} />
-  ),
-  {
+export const day = () => <DetailsTable {...WEATHER_DATA_DAY} />;
+
+day.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Night', () => (
-    <DetailsTable {...WEATHER_DATA_NIGHT} />
-  ),
-  {
+export const night = () => <DetailsTable {...WEATHER_DATA_NIGHT} />;
+
+night.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Hourly', () => (
-    <DetailsTable {...WEATHER_DATA_HOURLY} />
-  ),
-  {
+export const hourly = () => <DetailsTable {...WEATHER_DATA_HOURLY} />;
+
+hourly.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};

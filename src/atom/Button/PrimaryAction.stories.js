@@ -1,13 +1,15 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { text, boolean } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import { Icon } from 'atom/Icon/Icon';
 import { Button } from './Button';
 import readme from './README.md';
 
-storiesOf('Atoms|Button/Primary Action', module)
-  .add('Button', () => {
+export default {
+  title: 'Atoms|Button/Primary Action',
+};
+
+export const button = () => {
     const btnText = text('title', 'See story');
     const disabled = boolean('disabled', false);
 
@@ -20,15 +22,19 @@ storiesOf('Atoms|Button/Primary Action', module)
         {btnText}
       </Button>
     );
-  }, {
-    readme: {
-      sidebar: `${readme}<!-- PROPS -->`,
-    },
-    jest: ['Button.test.js'],
-  });
+  };
 
-storiesOf('Atoms|Button/Primary Action', module)
-  .add('Icon Only', () => {
+button.story = {
+  parameters: {
+      readme: {
+        sidebar: `${readme}<!-- PROPS -->`,
+      },
+      jest: ['Button.test.js'],
+    },
+};
+
+
+export const iconOnly = () => {
     const disabled = boolean('disabled', false);
 
     return (
@@ -44,15 +50,19 @@ storiesOf('Atoms|Button/Primary Action', module)
         />
       </Button>
     );
-  }, {
-    readme: {
-      sidebar: `${readme}<!-- PROPS -->`,
-    },
-    jest: ['Button.test.js'],
-  });
+  };
 
-storiesOf('Atoms|Button/Primary Action', module)
-  .add('Text with Icon', () => {
+iconOnly.story = {
+  parameters: {
+      readme: {
+        sidebar: `${readme}<!-- PROPS -->`,
+      },
+      jest: ['Button.test.js'],
+    },
+};
+
+
+export const textWithIcon = () => {
     const disabled = boolean('disabled', false);
 
     return (
@@ -69,15 +79,21 @@ storiesOf('Atoms|Button/Primary Action', module)
         />
       </Button>
     );
-  }, {
-    readme: {
-      sidebar: `${readme}<!-- PROPS -->`,
-    },
-    jest: ['Button.test.js'],
-  });
+  };
 
-storiesOf('Atoms|Button/Primary Action', module)
-  .add('Button Link', () => {
+textWithIcon.story = {
+  name: 'Text with Icon',
+
+  parameters: {
+      readme: {
+        sidebar: `${readme}<!-- PROPS -->`,
+      },
+      jest: ['Button.test.js'],
+    },
+};
+
+
+export const buttonLink = () => {
     const btnText = text('title', 'Button Link');
     const disabled = boolean('disabled', false);
 
@@ -90,9 +106,13 @@ storiesOf('Atoms|Button/Primary Action', module)
         {btnText}
       </Button>
     );
-  }, {
-    readme: {
-      sidebar: `${readme}<!-- PROPS -->`,
+  };
+
+buttonLink.story = {
+  parameters: {
+      readme: {
+        sidebar: `${readme}<!-- PROPS -->`,
+      },
+      jest: ['Button.test.js'],
     },
-    jest: ['Button.test.js'],
-  });
+};

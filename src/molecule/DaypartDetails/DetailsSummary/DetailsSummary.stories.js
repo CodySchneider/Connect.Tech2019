@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  storiesOf,
-} from '@storybook/react';
 import DetailsSummary from './DetailsSummary';
 import {
   SUMMARY_DATA_DAILY,
@@ -11,43 +8,54 @@ import {
 } from './DetailsSummary.stories.const';
 import readme from './DetailsSummary.md';
 
-const stories = storiesOf('Molecules|DaypartDetails/DetailsSummary', module);
+export default { title: 'Molecules|DaypartDetails/DetailsSummary'};
 
-stories
-  .add('Daily', () => (
-    <>
-      <h3>Long Values</h3>
-      <DetailsSummary {...SUMMARY_DATA_DAILY} />
-      <h3>Short Values</h3>
-      <DetailsSummary {...SUMMARY_DATA_DAILY_SHORT} />
-    </>
-  ), {
+export const daily = () => (
+  <>
+    <h3>Long Values</h3>
+    <DetailsSummary {...SUMMARY_DATA_DAILY} />
+    <h3>Short Values</h3>
+    <DetailsSummary {...SUMMARY_DATA_DAILY_SHORT} />
+  </>
+);
+
+daily.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Hourly', () => (
-    <>
-      <h3>Long Values</h3>
-      <DetailsSummary {...SUMMARY_DATA_HOURLY} />
-      <h3>Short Values</h3>
-      <DetailsSummary {...SUMMARY_DATA_HOURLY_SHORT} />
-    </>
-  ), {
+export const hourly = () => (
+  <>
+    <h3>Long Values</h3>
+    <DetailsSummary {...SUMMARY_DATA_HOURLY} />
+    <h3>Short Values</h3>
+    <DetailsSummary {...SUMMARY_DATA_HOURLY_SHORT} />
+  </>
+);
+
+hourly.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Fade on Open', () => (
-    <div open>
-      <DetailsSummary {...SUMMARY_DATA_DAILY} fadeOnOpen />
-    </div>
-  ), {
+export const fadeOnOpenStory = () => (
+  <div open>
+    <DetailsSummary {...SUMMARY_DATA_DAILY} fadeOnOpen />
+  </div>
+);
+
+fadeOnOpenStory.story = {
+  name: 'Fade on Open',
+
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};

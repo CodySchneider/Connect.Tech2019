@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-  storiesOf,
-} from '@storybook/react';
-import {
-  number,
-} from '@storybook/addon-knobs';
+import { number } from '@storybook/addon-knobs';
 import { DailyForecast } from './DailyForecast';
 import {
   WEATHER_DATA_DAY,
   WEATHER_DATA_NIGHT,
 } from 'molecule/DaypartDetails/DaypartDetails.stories.const';
-import {
-  SUMMARY_DATA_DAILY,
-} from 'molecule/DaypartDetails/DetailsSummary/DetailsSummary.stories.const';
+import { SUMMARY_DATA_DAILY } from 'molecule/DaypartDetails/DetailsSummary/DetailsSummary.stories.const';
 import readme from './README.md';
 import styles from './DailyForecast.stories.scss';
 
@@ -29,36 +22,41 @@ const adIndexOptions = {
   step: 1,
 };
 
-const stories = storiesOf('Organisms (Modules)|DailyForecast', module);
+export default { title: 'Organisms (Modules)|DailyForecast'};
 
-stories
-  .add('Default', () => {
-    const dayLimit = number('Number of Days', 10, dayLimitOptions);
-    const adIndex = number('Ad Index', 5, adIndexOptions);
-    const dailyData = [];
+export const defaultStory = () => {
+  const dayLimit = number('Number of Days', 10, dayLimitOptions);
+  const adIndex = number('Ad Index', 5, adIndexOptions);
+  const dailyData = [];
 
-    for (let i = 0; i < dayLimit; i++) {
-      dailyData.push({
-        summary: SUMMARY_DATA_DAILY,
-        day: WEATHER_DATA_DAY,
-        night: WEATHER_DATA_NIGHT,
-      });
-    }
+  for (let i = 0; i < dayLimit; i++) {
+    dailyData.push({
+      summary: SUMMARY_DATA_DAILY,
+      day: WEATHER_DATA_DAY,
+      night: WEATHER_DATA_NIGHT,
+    });
+  }
 
-    return (
-      <div className={styles.background}>
-        <DailyForecast
-          adIndex={adIndex}
-          dailyData={dailyData}
-          summaryData={SUMMARY_DATA_DAILY}
-          alertSeverityCode={1}
-          alertHeadline="Run for the hills"
-        />
-      </div>
-    );
-  }, {
+  return (
+    <div className={styles.background}>
+      <DailyForecast
+        adIndex={adIndex}
+        dailyData={dailyData}
+        summaryData={SUMMARY_DATA_DAILY}
+        alertSeverityCode={1}
+        alertHeadline="Run for the hills"
+      />
+    </div>
+  );
+};
+
+defaultStory.story = {
+  name: 'Default',
+
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
     jest: ['DailyForecast.test.js'],
-  });
+  },
+};

@@ -129,5 +129,5 @@ addParameters({
 });
 
 configure(require.context('../src', true, /\.stories\.js$/), module);
-// configure(require.context('../src/molecule', true, /\.stories\.js$/), module);
-// configure(require.context('../src/organism', true, /\.stories\.js$/), module);
+// configure(require.context('../src/molecule', true, /\.stories\.js$/)};
+// configure(require.context('../src/organism', true, /\.stories\.js$/)};

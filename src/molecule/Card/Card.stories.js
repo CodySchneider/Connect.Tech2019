@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   text,
 } from '@storybook/addon-knobs';
@@ -20,9 +19,11 @@ const CardContent = () => (
   </>
 );
 
+export default {
+  title: 'Molecules|Card',
+};
 
-storiesOf('Molecules|Card', module)
-  .add('Default', () => {
+export const defaultStory = () => {
     const title = text('Card Heading', 'Card Heading');
 
     return (
@@ -32,15 +33,21 @@ storiesOf('Molecules|Card', module)
         <CardContent />
       </Card>
     );
-  }, {
-    readme: {
-      sidebar: `${readme}<!-- PROPS -->`,
-    },
-    jest: ['Card.test.js'],
-  });
+  };
 
-storiesOf('Molecules|Card', module)
-  .add('CTA Button', () => {
+defaultStory.story = {
+  name: 'Default',
+
+  parameters: {
+      readme: {
+        sidebar: `${readme}<!-- PROPS -->`,
+      },
+      jest: ['Card.test.js'],
+    },
+};
+
+
+export const ctaButton = () => {
     const title = text('Card Heading', 'Card Heading');
     const ctatext = text('CTA Text', 'Call To Action');
     const ctaurl = text('CTA Url', '/');
@@ -54,15 +61,21 @@ storiesOf('Molecules|Card', module)
         <CardContent />
       </Card>
     );
-  }, {
-    readme: {
-      sidebar: `${readme}<!-- PROPS -->`,
-    },
-    jest: ['Card.test.js'],
-  });
+  };
 
-storiesOf('Molecules|Card', module)
-  .add('No Header', () => {
+ctaButton.story = {
+  name: 'CTA Button',
+
+  parameters: {
+      readme: {
+        sidebar: `${readme}<!-- PROPS -->`,
+      },
+      jest: ['Card.test.js'],
+    },
+};
+
+
+export const noHeader = () => {
     const title = text('Card Heading', '');
 
     return (
@@ -72,19 +85,13 @@ storiesOf('Molecules|Card', module)
         <CardContent />
       </Card>
     );
-  }, {
-    readme: {
-      sidebar: `${readme}<!-- PROPS -->`,
-    },
-    jest: ['Card.test.js'],
-  });
+  };
 
-// storiesOf('Molecules|Card', module)
-//   .add('No Content', () => (
-//     <Card />
-//   ), {
-//     readme: {
-//       sidebar: `${readme}<!-- PROPS -->`,
-//     },
-//     jest: ['Card.test.js'],
-//   });
+noHeader.story = {
+  parameters: {
+      readme: {
+        sidebar: `${readme}<!-- PROPS -->`,
+      },
+      jest: ['Card.test.js'],
+    },
+};

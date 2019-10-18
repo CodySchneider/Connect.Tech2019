@@ -1,14 +1,16 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import AlertHeadline from './AlertHeadline';
 import readme from './README.md';
 import styles from './AlertHeadline.stories.scss';
 import { sampleDesc } from './AlertHeadline.stories.const';
 
-const buttonStories = storiesOf('Molecules|Alert Headline/As a button', module);
-const textStories = storiesOf('Molecules|Alert Headline/As text', module);
+export default {
+  title: 'Molecules|Alert Headline',
+};
 
-buttonStories.add('Severity 1', () => (
+// const buttonStories = storiesOf('Molecules|Alert Headline/As a button'};
+
+export const severity1 = () => (
   <>
     <div className={styles.storyWrapperWithBackground}>
       <AlertHeadline
@@ -30,13 +32,17 @@ buttonStories.add('Severity 1', () => (
       />
     </div>
   </>
-), {
-  readme: {
-    sidebar: `${readme}<!-- PROPS -->`,
-  },
-});
+);
 
-buttonStories.add('Severity 2', () => (
+severity1.story = {
+  parameters: {
+    readme: {
+      sidebar: `${readme}<!-- PROPS -->`,
+    },
+  },
+};
+
+export const severity2 = () => (
   <>
     <div className={styles.storyWrapperWithBackground}>
       <AlertHeadline
@@ -58,13 +64,17 @@ buttonStories.add('Severity 2', () => (
       />
     </div>
   </>
-), {
-  readme: {
-    sidebar: `${readme}<!-- PROPS -->`,
-  },
-});
+);
 
-buttonStories.add('Severity 3', () => (
+severity2.story = {
+  parameters: {
+    readme: {
+      sidebar: `${readme}<!-- PROPS -->`,
+    },
+  },
+};
+
+export const severity3 = () => (
   <>
     <div className={styles.storyWrapperWithBackground}>
       <AlertHeadline
@@ -86,13 +96,17 @@ buttonStories.add('Severity 3', () => (
       />
     </div>
   </>
-), {
-  readme: {
-    sidebar: `${readme}<!-- PROPS -->`,
-  },
-});
+);
 
-buttonStories.add('No Other Alerts', () => (
+severity3.story = {
+  parameters: {
+    readme: {
+      sidebar: `${readme}<!-- PROPS -->`,
+    },
+  },
+};
+
+export const noOtherAlerts = () => (
   <>
     <div className={styles.storyWrapperWithBackground}>
       <AlertHeadline
@@ -112,8 +126,12 @@ buttonStories.add('No Other Alerts', () => (
       />
     </div>
   </>
-), {
-  readme: {
-    sidebar: `${readme}<!-- PROPS -->`,
+);
+
+noOtherAlerts.story = {
+  parameters: {
+    readme: {
+      sidebar: `${readme}<!-- PROPS -->`,
+    },
   },
-});
+};

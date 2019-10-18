@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  storiesOf,
-} from '@storybook/react';
 import { DaypartDetails } from './DaypartDetails';
 import {
   SUMMARY_DATA_DAILY,
@@ -15,31 +12,35 @@ import {
 
 import readme from './README.md';
 
-const stories = storiesOf('Molecules|DaypartDetails', module);
+export default { title: 'Molecules|DaypartDetails'};
 
-stories
-  .add('Daily', () => (
-    <DaypartDetails
-      open
-      summary={SUMMARY_DATA_DAILY}
-      day={WEATHER_DATA_DAY}
-      night={WEATHER_DATA_NIGHT}
-    />
-  ), {
+export const daily = () => (
+  <DaypartDetails
+    open
+    summary={SUMMARY_DATA_DAILY}
+    day={WEATHER_DATA_DAY}
+    night={WEATHER_DATA_NIGHT}
+  />
+);
+
+daily.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-stories
-  .add('Hourly', () => (
-    <DaypartDetails
-      open
-      summary={SUMMARY_DATA_HOURLY}
-      hourly={WEATHER_DATA_HOURLY}
-    />
-  ), {
+export const hourlyStory = () => (
+  <DaypartDetails open summary={SUMMARY_DATA_HOURLY} hourly={WEATHER_DATA_HOURLY} />
+);
+
+hourlyStory.story = {
+  name: 'Hourly',
+
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};

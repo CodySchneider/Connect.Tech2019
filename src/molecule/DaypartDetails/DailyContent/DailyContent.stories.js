@@ -1,29 +1,26 @@
 import React from 'react';
-import {
-  storiesOf,
-} from '@storybook/react';
 import { DailyContent } from './DailyContent';
-import {
-  WEATHER_DATA_DAY,
-  WEATHER_DATA_NIGHT,
-} from '../DaypartDetails.stories.const';
+import { WEATHER_DATA_DAY, WEATHER_DATA_NIGHT } from '../DaypartDetails.stories.const';
 import readme from './DailyContent.md';
 
-const stories = storiesOf('Molecules|DaypartDetails/DailyContent', module);
+export default { title: 'Molecules|DaypartDetails/DailyContent'};
 
-stories
-  .add('Day', () => (
-    <DailyContent {...WEATHER_DATA_DAY} />
-  ), {
+export const day = () => <DailyContent {...WEATHER_DATA_DAY} />;
+
+day.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
-stories
-  .add('Night', () => (
-    <DailyContent {...WEATHER_DATA_NIGHT} />
-  ), {
+  },
+};
+
+export const night = () => <DailyContent {...WEATHER_DATA_NIGHT} />;
+
+night.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};

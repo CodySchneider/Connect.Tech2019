@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { select, number } from '@storybook/addon-knobs';
 import { Icon } from './Icon';
 import { getSkycodeFromName } from 'skycode';
@@ -45,8 +44,12 @@ const widthRange = {
   step: 1,
 };
 
-storiesOf('Atoms|Icon', module)
-  .add('Individual Icon', () => {
+export default {
+  title: 'Atoms|Icon',
+  excludeStories: ['wxIconSet', 'sets'],
+};
+
+export const individualIcon = () => {
     const width = number('Icon Size', 40, widthRange);
     const setName = select('Icon Set', Object.keys(sets), 'current-conditions');
     const iconNames = sets[setName];
@@ -56,15 +59,18 @@ storiesOf('Atoms|Icon', module)
     return (
       displayIndividual(setName, iconName, theme, width)
     );
-  },
-  {
+  };
+
+individualIcon.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|Icon', module)
-  .add('Individual Weather Icons', () => {
+
+export const individualWeatherIcons = () => {
     const skyCodeOptions = {
       range: true,
       min: 0,
@@ -94,12 +100,15 @@ storiesOf('Atoms|Icon', module)
     return (
       displayIndividual(setName, iconName, theme, width, skyCode)
     );
-  },
-  {
+  };
+
+individualWeatherIcons.story = {
+  parameters: {
     readme: {
       sidebar: `${weatherIconReadme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
 const displayIndividual = (setName, iconName, theme, width, skyCode = null) => (
   <span
@@ -119,8 +128,8 @@ const displayIndividual = (setName, iconName, theme, width, skyCode = null) => (
   </span>
 );
 
-storiesOf('Atoms|Icon', module)
-  .add('All Icons', () => {
+
+export const allIconsStory = () => {
     const theme = select('UI Theme', themes, 'action');
 
     return (
@@ -128,15 +137,20 @@ storiesOf('Atoms|Icon', module)
         displaySet(sets[setName], setName, theme)
       ))
     );
-  },
-  {
+  };
+
+allIconsStory.story = {
+  name: 'All Icons',
+
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|Icon', module)
-  .add('All Weather Icons', () => {
+
+export const allWeatherIcons = () => {
     const setName = 'weather';
     const wxThemes = ['full', 'light'];
     const theme = select('UI Theme', wxThemes, wxThemes[0]);
@@ -144,12 +158,15 @@ storiesOf('Atoms|Icon', module)
     return (
       displaySet(wxIconSet, setName, theme, true)
     );
-  },
-  {
+  };
+
+allWeatherIcons.story = {
+  parameters: {
     readme: {
       sidebar: `${weatherIconReadme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
 const getIconName = (name, addSkycode) => {
   const skyCode = getSkycodeFromName(name);

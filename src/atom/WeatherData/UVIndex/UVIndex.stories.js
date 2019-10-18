@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import {
   number,
 } from '@storybook/addon-knobs';
@@ -7,8 +6,11 @@ import { UVIndex } from './UVIndex';
 import readme from './UVIndex.md';
 import styles from '../WeatherData.stories.scss';
 
-storiesOf('Atoms|WeatherData/UVIndex', module)
-  .add('Default', () => {
+export default {
+  title: 'Atoms|WeatherData/UVIndex',
+};
+
+export const defaultStory = () => {
     const tempRange = {
       range: true,
       min: 0,
@@ -22,15 +24,20 @@ storiesOf('Atoms|WeatherData/UVIndex', module)
         <UVIndex uvIndex={uvIndex} />
       </div>
     );
-  },
-  {
+  };
+
+defaultStory.story = {
+  name: 'Default',
+
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/UVIndex', module)
-  .add('Extreme', () => {
+
+export const extreme = () => {
     const tempRange = {
       range: true,
       min: 0,
@@ -44,15 +51,18 @@ storiesOf('Atoms|WeatherData/UVIndex', module)
         <UVIndex uvIndex={uvIndex} />
       </div>
     );
-  },
-  {
+  };
+
+extreme.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/UVIndex', module)
-  .add('Zero', () => {
+
+export const zero = () => {
     const uvIndex = number('UV Index', 0);
 
     return (
@@ -60,16 +70,18 @@ storiesOf('Atoms|WeatherData/UVIndex', module)
         <UVIndex uvIndex={uvIndex} />
       </div>
     );
-  },
-  {
+  };
+
+zero.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
 
-storiesOf('Atoms|WeatherData/UVIndex', module)
-  .add('Negative', () => {
+export const negative = () => {
     const uvIndex = number('UV Index', -10);
 
     return (
@@ -77,15 +89,18 @@ storiesOf('Atoms|WeatherData/UVIndex', module)
         <UVIndex uvIndex={uvIndex} />
       </div>
     );
-  },
-  {
+  };
+
+negative.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
 
-storiesOf('Atoms|WeatherData/UVIndex', module)
-  .add('Undefined', () => {
+
+export const undefined = () => {
     const uvIndex = number('UV Index');
 
     return (
@@ -93,9 +108,12 @@ storiesOf('Atoms|WeatherData/UVIndex', module)
         <UVIndex uvIndex={uvIndex} />
       </div>
     );
-  },
-  {
+  };
+
+undefined.story = {
+  parameters: {
     readme: {
       sidebar: `${readme}<!-- PROPS -->`,
     },
-  });
+  },
+};
