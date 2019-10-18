@@ -29,7 +29,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@7.6.2", "@babel/core@^7.0.0", "@babel/core@^7.4.5":
+"@babel/core@7.6.2":
   version "7.6.2"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/core/-/core-7.6.2.tgz#069a776e8d5e9eefff76236bc8845566bd31dd91"
   integrity sha1-Bpp3bo1enu//diNryIRVZr0x3ZE=
@@ -49,7 +49,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.1.6", "@babel/core@^7.6.4":
+"@babel/core@^7.0.0", "@babel/core@^7.1.0", "@babel/core@^7.1.6", "@babel/core@^7.4.5", "@babel/core@^7.6.4":
   version "7.6.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/core/-/core-7.6.4.tgz#6ebd9fe00925f6c3e177bb726a188b5f578088ff"
   integrity sha1-br2f4Akl9sPhd7tyahiLX1eAiP8=
@@ -69,22 +69,12 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/generator@^7.4.0", "@babel/generator@^7.6.3", "@babel/generator@^7.6.4":
+"@babel/generator@^7.4.0", "@babel/generator@^7.6.0", "@babel/generator@^7.6.2", "@babel/generator@^7.6.3", "@babel/generator@^7.6.4":
   version "7.6.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/generator/-/generator-7.6.4.tgz#a4f8437287bf9671b07f483b76e3bb731bc97671"
   integrity sha1-pPhDcoe/lnGwf0g7duO7cxvJdnE=
   dependencies:
     "@babel/types" "^7.6.3"
-    jsesc "^2.5.1"
-    lodash "^4.17.13"
-    source-map "^0.5.0"
-
-"@babel/generator@^7.6.0", "@babel/generator@^7.6.2":
-  version "7.6.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/generator/-/generator-7.6.2.tgz#dac8a3c2df118334c2a29ff3446da1636a8f8c03"
-  integrity sha1-2sijwt8RgzTCop/zRG2hY2qPjAM=
-  dependencies:
-    "@babel/types" "^7.6.0"
     jsesc "^2.5.1"
     lodash "^4.17.13"
     source-map "^0.5.0"
@@ -282,15 +272,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.1.6", "@babel/parser@^7.4.3", "@babel/parser@^7.6.3", "@babel/parser@^7.6.4":
+"@babel/parser@^7.1.0", "@babel/parser@^7.1.6", "@babel/parser@^7.4.3", "@babel/parser@^7.6.0", "@babel/parser@^7.6.2", "@babel/parser@^7.6.3", "@babel/parser@^7.6.4":
   version "7.6.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/parser/-/parser-7.6.4.tgz#cb9b36a7482110282d5cb6dd424ec9262b473d81"
   integrity sha1-y5s2p0ghECgtXLbdQk7JJitHPYE=
-
-"@babel/parser@^7.6.0", "@babel/parser@^7.6.2":
-  version "7.6.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/parser/-/parser-7.6.2.tgz#205e9c95e16ba3b8b96090677a67c9d6075b70a1"
-  integrity sha1-IF6cleFro7i5YJBnemfJ1gdbcKE=
 
 "@babel/plugin-proposal-async-generator-functions@^7.2.0":
   version "7.2.0"
@@ -453,15 +438,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-transform-block-scoping@^7.6.0", "@babel/plugin-transform-block-scoping@^7.6.2":
-  version "7.6.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-block-scoping/-/plugin-transform-block-scoping-7.6.2.tgz#96c33ab97a9ae500cc6f5b19e04a7e6553360a79"
-  integrity sha1-lsM6uXqa5QDMb1sZ4Ep+ZVM2Cnk=
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-    lodash "^4.17.13"
-
-"@babel/plugin-transform-block-scoping@^7.6.3":
+"@babel/plugin-transform-block-scoping@^7.6.0", "@babel/plugin-transform-block-scoping@^7.6.3":
   version "7.6.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-block-scoping/-/plugin-transform-block-scoping-7.6.3.tgz#6e854e51fbbaa84351b15d4ddafe342f3a5d542a"
   integrity sha1-boVOUfu6qENRsV1N2v40LzpdVCo=
@@ -521,10 +498,18 @@
     "@babel/helper-builder-binary-assignment-operator-visitor" "^7.1.0"
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-transform-flow-strip-types@7.4.4", "@babel/plugin-transform-flow-strip-types@^7.0.0":
+"@babel/plugin-transform-flow-strip-types@7.4.4":
   version "7.4.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.4.4.tgz#d267a081f49a8705fc9146de0768c6b58dccd8f7"
   integrity sha1-0meggfSahwX8kUbeB2jGtY3M2Pc=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/plugin-syntax-flow" "^7.2.0"
+
+"@babel/plugin-transform-flow-strip-types@^7.0.0":
+  version "7.6.3"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.6.3.tgz#8110f153e7360cfd5996eee68706cfad92d85256"
+  integrity sha1-gRDxU+c2DP1Zlu7mhwbPrZLYUlY=
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-flow" "^7.2.0"
@@ -594,14 +579,7 @@
     "@babel/helper-module-transforms" "^7.1.0"
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-transform-named-capturing-groups-regex@^7.6.0", "@babel/plugin-transform-named-capturing-groups-regex@^7.6.2":
-  version "7.6.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-named-capturing-groups-regex/-/plugin-transform-named-capturing-groups-regex-7.6.2.tgz#c1ca0bb84b94f385ca302c3932e870b0fb0e522b"
-  integrity sha1-wcoLuEuU84XKMCw5MuhwsPsOUis=
-  dependencies:
-    regexpu-core "^4.6.0"
-
-"@babel/plugin-transform-named-capturing-groups-regex@^7.6.3":
+"@babel/plugin-transform-named-capturing-groups-regex@^7.6.0", "@babel/plugin-transform-named-capturing-groups-regex@^7.6.3":
   version "7.6.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-named-capturing-groups-regex/-/plugin-transform-named-capturing-groups-regex-7.6.3.tgz#aaa6e409dd4fb2e50b6e2a91f7e3a3149dbce0cf"
   integrity sha1-qqbkCd1PsuULbiqR9+OjFJ284M8=
@@ -640,9 +618,9 @@
     "@babel/helper-plugin-utils" "^7.0.0"
 
 "@babel/plugin-transform-react-constant-elements@^7.0.0", "@babel/plugin-transform-react-constant-elements@^7.2.0":
-  version "7.6.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-react-constant-elements/-/plugin-transform-react-constant-elements-7.6.0.tgz#13b8434fb817d30feebd811256eb402c9a245c9e"
-  integrity sha1-E7hDT7gX0w/uvYESVutALJokXJ4=
+  version "7.6.3"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-react-constant-elements/-/plugin-transform-react-constant-elements-7.6.3.tgz#9fc9ea060b983c7c035acbe481cbe1fb1245bfff"
+  integrity sha1-n8nqBguYPHwDWsvkgcvh+xJFv/8=
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.0.0"
     "@babel/helper-plugin-utils" "^7.0.0"
@@ -751,9 +729,9 @@
     "@babel/helper-plugin-utils" "^7.0.0"
 
 "@babel/plugin-transform-typescript@^7.6.0":
-  version "7.6.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.6.0.tgz#48d78405f1aa856ebeea7288a48a19ed8da377a6"
-  integrity sha1-SNeEBfGqhW6+6nKIpIoZ7Y2jd6Y=
+  version "7.6.3"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.6.3.tgz#dddb50cf3b8b2ef70b22e5326e9a91f05a1db13b"
+  integrity sha1-3dtQzzuLLvcLIuUybpqR8FodsTs=
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.6.0"
     "@babel/helper-plugin-utils" "^7.0.0"
@@ -824,7 +802,7 @@
     js-levenshtein "^1.1.3"
     semver "^5.5.0"
 
-"@babel/preset-env@^7.1.6", "@babel/preset-env@^7.6.3":
+"@babel/preset-env@^7.1.6", "@babel/preset-env@^7.4.5", "@babel/preset-env@^7.6.3":
   version "7.6.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/preset-env/-/preset-env-7.6.3.tgz#9e1bf05a2e2d687036d24c40e4639dc46cef2271"
   integrity sha1-nhvwWi4taHA20kxA5GOdxGzvInE=
@@ -880,62 +858,6 @@
     js-levenshtein "^1.1.3"
     semver "^5.5.0"
 
-"@babel/preset-env@^7.4.5":
-  version "7.6.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/preset-env/-/preset-env-7.6.2.tgz#abbb3ed785c7fe4220d4c82a53621d71fc0c75d3"
-  integrity sha1-q7s+14XH/kIg1MgqU2IdcfwMddM=
-  dependencies:
-    "@babel/helper-module-imports" "^7.0.0"
-    "@babel/helper-plugin-utils" "^7.0.0"
-    "@babel/plugin-proposal-async-generator-functions" "^7.2.0"
-    "@babel/plugin-proposal-dynamic-import" "^7.5.0"
-    "@babel/plugin-proposal-json-strings" "^7.2.0"
-    "@babel/plugin-proposal-object-rest-spread" "^7.6.2"
-    "@babel/plugin-proposal-optional-catch-binding" "^7.2.0"
-    "@babel/plugin-proposal-unicode-property-regex" "^7.6.2"
-    "@babel/plugin-syntax-async-generators" "^7.2.0"
-    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
-    "@babel/plugin-syntax-json-strings" "^7.2.0"
-    "@babel/plugin-syntax-object-rest-spread" "^7.2.0"
-    "@babel/plugin-syntax-optional-catch-binding" "^7.2.0"
-    "@babel/plugin-transform-arrow-functions" "^7.2.0"
-    "@babel/plugin-transform-async-to-generator" "^7.5.0"
-    "@babel/plugin-transform-block-scoped-functions" "^7.2.0"
-    "@babel/plugin-transform-block-scoping" "^7.6.2"
-    "@babel/plugin-transform-classes" "^7.5.5"
-    "@babel/plugin-transform-computed-properties" "^7.2.0"
-    "@babel/plugin-transform-destructuring" "^7.6.0"
-    "@babel/plugin-transform-dotall-regex" "^7.6.2"
-    "@babel/plugin-transform-duplicate-keys" "^7.5.0"
-    "@babel/plugin-transform-exponentiation-operator" "^7.2.0"
-    "@babel/plugin-transform-for-of" "^7.4.4"
-    "@babel/plugin-transform-function-name" "^7.4.4"
-    "@babel/plugin-transform-literals" "^7.2.0"
-    "@babel/plugin-transform-member-expression-literals" "^7.2.0"
-    "@babel/plugin-transform-modules-amd" "^7.5.0"
-    "@babel/plugin-transform-modules-commonjs" "^7.6.0"
-    "@babel/plugin-transform-modules-systemjs" "^7.5.0"
-    "@babel/plugin-transform-modules-umd" "^7.2.0"
-    "@babel/plugin-transform-named-capturing-groups-regex" "^7.6.2"
-    "@babel/plugin-transform-new-target" "^7.4.4"
-    "@babel/plugin-transform-object-super" "^7.5.5"
-    "@babel/plugin-transform-parameters" "^7.4.4"
-    "@babel/plugin-transform-property-literals" "^7.2.0"
-    "@babel/plugin-transform-regenerator" "^7.4.5"
-    "@babel/plugin-transform-reserved-words" "^7.2.0"
-    "@babel/plugin-transform-shorthand-properties" "^7.2.0"
-    "@babel/plugin-transform-spread" "^7.6.2"
-    "@babel/plugin-transform-sticky-regex" "^7.2.0"
-    "@babel/plugin-transform-template-literals" "^7.4.4"
-    "@babel/plugin-transform-typeof-symbol" "^7.2.0"
-    "@babel/plugin-transform-unicode-regex" "^7.6.2"
-    "@babel/types" "^7.6.0"
-    browserslist "^4.6.0"
-    core-js-compat "^3.1.1"
-    invariant "^2.2.2"
-    js-levenshtein "^1.1.3"
-    semver "^5.5.0"
-
 "@babel/preset-flow@^7.0.0":
   version "7.0.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/preset-flow/-/preset-flow-7.0.0.tgz#afd764835d9535ec63d8c7d4caf1c06457263da2"
@@ -944,7 +866,7 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-transform-flow-strip-types" "^7.0.0"
 
-"@babel/preset-react@7.0.0", "@babel/preset-react@^7.0.0":
+"@babel/preset-react@7.0.0":
   version "7.0.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/preset-react/-/preset-react-7.0.0.tgz#e86b4b3d99433c7b3e9e91747e2653958bc6b3c0"
   integrity sha1-6GtLPZlDPHs+npF0fiZTlYvGs8A=
@@ -955,7 +877,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/preset-react@^7.6.3":
+"@babel/preset-react@^7.0.0", "@babel/preset-react@^7.6.3":
   version "7.6.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/preset-react/-/preset-react-7.6.3.tgz#d5242c828322520205ae4eda5d4f4f618964e2f6"
   integrity sha1-1SQsgoMiUgIFrk7aXU9PYYlk4vY=
@@ -985,13 +907,6 @@
     pirates "^4.0.0"
     source-map-support "^0.5.9"
 
-"@babel/runtime@7.3.4":
-  version "7.3.4"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/runtime/-/runtime-7.3.4.tgz#73d12ba819e365fcf7fd152aed56d6df97d21c83"
-  integrity sha1-c9ErqBnjZfz3/RUq7VbW35fSHIM=
-  dependencies:
-    regenerator-runtime "^0.12.0"
-
 "@babel/runtime@7.6.0":
   version "7.6.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/runtime/-/runtime-7.6.0.tgz#4fc1d642a9fd0299754e8b5de62c631cf5568205"
@@ -999,10 +914,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5":
-  version "7.6.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
-  integrity sha1-w9bkGzBO8Q3PE3d6M+dpTsSppt0=
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3":
+  version "7.6.3"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/runtime/-/runtime-7.6.3.tgz#935122c74c73d2240cafd32ddb5fc2a6cd35cf1f"
+  integrity sha1-k1Eix0xz0iQMr9Mt21/Cps01zx8=
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -1015,22 +930,7 @@
     "@babel/parser" "^7.6.0"
     "@babel/types" "^7.6.0"
 
-"@babel/traverse@^7.1.0", "@babel/traverse@^7.4.4", "@babel/traverse@^7.5.5", "@babel/traverse@^7.6.0", "@babel/traverse@^7.6.2":
-  version "7.6.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/traverse/-/traverse-7.6.2.tgz#b0e2bfd401d339ce0e6c05690206d1e11502ce2c"
-  integrity sha1-sOK/1AHTOc4ObAVpAgbR4RUCziw=
-  dependencies:
-    "@babel/code-frame" "^7.5.5"
-    "@babel/generator" "^7.6.2"
-    "@babel/helper-function-name" "^7.1.0"
-    "@babel/helper-split-export-declaration" "^7.4.4"
-    "@babel/parser" "^7.6.2"
-    "@babel/types" "^7.6.0"
-    debug "^4.1.0"
-    globals "^11.1.0"
-    lodash "^4.17.13"
-
-"@babel/traverse@^7.4.3", "@babel/traverse@^7.6.3":
+"@babel/traverse@^7.1.0", "@babel/traverse@^7.4.3", "@babel/traverse@^7.4.4", "@babel/traverse@^7.5.5", "@babel/traverse@^7.6.0", "@babel/traverse@^7.6.2", "@babel/traverse@^7.6.3":
   version "7.6.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/traverse/-/traverse-7.6.3.tgz#66d7dba146b086703c0fb10dd588b7364cec47f9"
   integrity sha1-ZtfboUawhnA8D7EN1Yi3NkzsR/k=
@@ -1045,16 +945,7 @@
     globals "^11.1.0"
     lodash "^4.17.13"
 
-"@babel/types@^7.0.0", "@babel/types@^7.2.0", "@babel/types@^7.3.0", "@babel/types@^7.4.4", "@babel/types@^7.5.5", "@babel/types@^7.6.0":
-  version "7.6.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/types/-/types-7.6.1.tgz#53abf3308add3ac2a2884d539151c57c4b3ac648"
-  integrity sha1-U6vzMIrdOsKiiE1TkVHFfEs6xkg=
-  dependencies:
-    esutils "^2.0.2"
-    lodash "^4.17.13"
-    to-fast-properties "^2.0.0"
-
-"@babel/types@^7.4.0", "@babel/types@^7.6.3":
+"@babel/types@^7.0.0", "@babel/types@^7.2.0", "@babel/types@^7.3.0", "@babel/types@^7.4.0", "@babel/types@^7.4.4", "@babel/types@^7.5.5", "@babel/types@^7.6.0", "@babel/types@^7.6.3":
   version "7.6.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@babel/types/-/types-7.6.3.tgz#3f07d96f854f98e2fbd45c64b0cb942d11e8ba09"
   integrity sha1-PwfZb4VPmOL71FxksMuULRHougk=
@@ -1087,9 +978,9 @@
     "@emotion/weak-memoize" "0.2.4"
 
 "@emotion/core@^10.0.14", "@emotion/core@^10.0.9":
-  version "10.0.17"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@emotion/core/-/core-10.0.17.tgz#3367376709721f4ee2068cff54ba581d362789d8"
-  integrity sha1-M2c3ZwlyH07iBoz/VLpYHTYnidg=
+  version "10.0.21"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@emotion/core/-/core-10.0.21.tgz#2e8398d2b92fd90d4ed6ac4d0b66214971de3458"
+  integrity sha1-LoOY0rkv2Q1O1qxNC2YhSXHeNFg=
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@emotion/cache" "^10.0.17"
@@ -1189,9 +1080,9 @@
   integrity sha1-CnCVreoGckPOMoPhtWuKj0U7JCo=
 
 "@hapi/hoek@8.x.x", "@hapi/hoek@^8.3.0":
-  version "8.3.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@hapi/hoek/-/hoek-8.3.0.tgz#2b9db1cd00f3891005c77b3a8d608b88a6d0aa4d"
-  integrity sha1-K52xzQDziRAFx3s6jWCLiKbQqk0=
+  version "8.3.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@hapi/hoek/-/hoek-8.3.2.tgz#91e7188edebc5d876f0b91a860f555ff06f0782b"
+  integrity sha1-kecYjt68XYdvC5GoYPVV/wbweCs=
 
 "@hapi/joi@^15.0.3":
   version "15.1.1"
@@ -1443,16 +1334,16 @@
   integrity sha1-n7OjzzEyMoFR81PeRjLgHlIQK+o=
 
 "@storybook/addon-a11y@^5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-a11y/-/addon-a11y-5.2.3.tgz#bcfb50b92b2a17c36e4cbb0b42a0c586e40aa68e"
-  integrity sha1-vPtQuSsqF8NuTLsLQqDFhuQKpo4=
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-a11y/-/addon-a11y-5.2.4.tgz#01a641bf37e2fbeb5ac23ec60824847356cb8dfc"
+  integrity sha1-AaZBvzfi++tawj7GCCSEc1bLjfw=
   dependencies:
-    "@storybook/addons" "5.2.3"
-    "@storybook/api" "5.2.3"
-    "@storybook/client-logger" "5.2.3"
-    "@storybook/components" "5.2.3"
-    "@storybook/core-events" "5.2.3"
-    "@storybook/theming" "5.2.3"
+    "@storybook/addons" "5.2.4"
+    "@storybook/api" "5.2.4"
+    "@storybook/client-logger" "5.2.4"
+    "@storybook/components" "5.2.4"
+    "@storybook/core-events" "5.2.4"
+    "@storybook/theming" "5.2.4"
     axe-core "^3.3.2"
     common-tags "^1.8.0"
     core-js "^3.0.1"
@@ -1465,36 +1356,16 @@
     redux "^4.0.1"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-actions@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-actions/-/addon-actions-5.2.1.tgz#2096e7f938b289be48af6f0adfd620997e7a420c"
-  integrity sha1-IJbn+Tiyib5Ir28K39YgmX56Qgw=
-  dependencies:
-    "@storybook/addons" "5.2.1"
-    "@storybook/api" "5.2.1"
-    "@storybook/client-api" "5.2.1"
-    "@storybook/components" "5.2.1"
-    "@storybook/core-events" "5.2.1"
-    "@storybook/theming" "5.2.1"
-    core-js "^3.0.1"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    polished "^3.3.1"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-inspector "^3.0.2"
-    uuid "^3.3.2"
-
 "@storybook/addon-jest@^5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-jest/-/addon-jest-5.2.3.tgz#8dff8429c86d97905561c30a27494a8d60a54bbf"
-  integrity sha1-jf+EKchtl5BVYcMKJ0lKjWClS78=
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-jest/-/addon-jest-5.2.4.tgz#aab0d4416387d4c7f38163f461f7bf95915cdc06"
+  integrity sha1-qrDUQWOH1MfzgWP0Yfe/lZFc3AY=
   dependencies:
-    "@storybook/addons" "5.2.3"
-    "@storybook/api" "5.2.3"
-    "@storybook/components" "5.2.3"
-    "@storybook/core-events" "5.2.3"
-    "@storybook/theming" "5.2.3"
+    "@storybook/addons" "5.2.4"
+    "@storybook/api" "5.2.4"
+    "@storybook/components" "5.2.4"
+    "@storybook/core-events" "5.2.4"
+    "@storybook/theming" "5.2.4"
     core-js "^3.0.1"
     global "^4.3.2"
     react "^16.8.3"
@@ -1502,40 +1373,17 @@
     upath "^1.1.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-knobs@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-knobs/-/addon-knobs-5.2.1.tgz#6bc2f7e254ccce09d6f5136e9cce63cd808c9853"
-  integrity sha1-a8L34lTMzgnW9RNunM5jzYCMmFM=
-  dependencies:
-    "@storybook/addons" "5.2.1"
-    "@storybook/api" "5.2.1"
-    "@storybook/client-api" "5.2.1"
-    "@storybook/components" "5.2.1"
-    "@storybook/core-events" "5.2.1"
-    "@storybook/theming" "5.2.1"
-    copy-to-clipboard "^3.0.8"
-    core-js "^3.0.1"
-    escape-html "^1.0.3"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    prop-types "^15.7.2"
-    qs "^6.6.0"
-    react-color "^2.17.0"
-    react-lifecycles-compat "^3.0.4"
-    react-select "^3.0.0"
-
 "@storybook/addon-knobs@^5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-knobs/-/addon-knobs-5.2.3.tgz#72f40f1549a404a092e06bf1bf11747e6da8af90"
-  integrity sha1-cvQPFUmkBKCS4GvxvxF0fm2or5A=
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addon-knobs/-/addon-knobs-5.2.4.tgz#f5db98235bc2870361dd3c224f8c10f901592c43"
+  integrity sha1-9duYI1vChwNh3TwiT4wQ+QFZLEM=
   dependencies:
-    "@storybook/addons" "5.2.3"
-    "@storybook/api" "5.2.3"
-    "@storybook/client-api" "5.2.3"
-    "@storybook/components" "5.2.3"
-    "@storybook/core-events" "5.2.3"
-    "@storybook/theming" "5.2.3"
+    "@storybook/addons" "5.2.4"
+    "@storybook/api" "5.2.4"
+    "@storybook/client-api" "5.2.4"
+    "@storybook/components" "5.2.4"
+    "@storybook/core-events" "5.2.4"
+    "@storybook/theming" "5.2.4"
     "@types/react-color" "^3.0.1"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
@@ -1549,65 +1397,29 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.0.0"
 
-"@storybook/addons@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addons/-/addons-5.2.1.tgz#6e52aa1fa2737e170fb675eb1fcceebd0a915a0b"
-  integrity sha1-blKqH6JzfhcPtnXrH8zuvQqRWgs=
+"@storybook/addons@5.2.4", "@storybook/addons@^5.2.3":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addons/-/addons-5.2.4.tgz#5c4f031e403c90a517cd6d208ec51d7e2455683a"
+  integrity sha1-XE8DHkA8kKUXzW0gjsUdfiRVaDo=
   dependencies:
-    "@storybook/api" "5.2.1"
-    "@storybook/channels" "5.2.1"
-    "@storybook/client-logger" "5.2.1"
-    "@storybook/core-events" "5.2.1"
+    "@storybook/api" "5.2.4"
+    "@storybook/channels" "5.2.4"
+    "@storybook/client-logger" "5.2.4"
+    "@storybook/core-events" "5.2.4"
     core-js "^3.0.1"
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
-"@storybook/addons@5.2.3", "@storybook/addons@^5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/addons/-/addons-5.2.3.tgz#02e35fad3ed4101625896e43e0a1e20215f6be38"
-  integrity sha1-AuNfrT7UEBYliW5D4KHiAhX2vjg=
+"@storybook/api@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/api/-/api-5.2.4.tgz#b0b3dbd93444d163a80b455fb877d816a37b3149"
+  integrity sha1-sLPb2TRE0WOoC0VfuHfYFqN7MUk=
   dependencies:
-    "@storybook/api" "5.2.3"
-    "@storybook/channels" "5.2.3"
-    "@storybook/client-logger" "5.2.3"
-    "@storybook/core-events" "5.2.3"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    util-deprecate "^1.0.2"
-
-"@storybook/api@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/api/-/api-5.2.1.tgz#b9cd6639019e044a8ade6fb358cade79c0e3b5d3"
-  integrity sha1-uc1mOQGeBEqK3m+zWMreecDjtdM=
-  dependencies:
-    "@storybook/channels" "5.2.1"
-    "@storybook/client-logger" "5.2.1"
-    "@storybook/core-events" "5.2.1"
-    "@storybook/router" "5.2.1"
-    "@storybook/theming" "5.2.1"
-    core-js "^3.0.1"
-    fast-deep-equal "^2.0.1"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    prop-types "^15.6.2"
-    react "^16.8.3"
-    semver "^6.0.0"
-    shallow-equal "^1.1.0"
-    store2 "^2.7.1"
-    telejson "^2.2.2"
-    util-deprecate "^1.0.2"
-
-"@storybook/api@5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/api/-/api-5.2.3.tgz#f30ab65a5c3d72da6b408a5120d63f0135eee247"
-  integrity sha1-8wq2Wlw9ctprQIpRINY/ATXu4kc=
-  dependencies:
-    "@storybook/channels" "5.2.3"
-    "@storybook/client-logger" "5.2.3"
-    "@storybook/core-events" "5.2.3"
-    "@storybook/router" "5.2.3"
-    "@storybook/theming" "5.2.3"
+    "@storybook/channels" "5.2.4"
+    "@storybook/client-logger" "5.2.4"
+    "@storybook/core-events" "5.2.4"
+    "@storybook/router" "5.2.4"
+    "@storybook/theming" "5.2.4"
     core-js "^3.0.1"
     fast-deep-equal "^2.0.1"
     global "^4.3.2"
@@ -1621,39 +1433,21 @@
     telejson "^3.0.2"
     util-deprecate "^1.0.2"
 
-"@storybook/channel-postmessage@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/channel-postmessage/-/channel-postmessage-5.2.1.tgz#85541f926d61eedbe2a687bb394d37fc06252751"
-  integrity sha1-hVQfkm1h7tvipoe7OU03/AYlJ1E=
+"@storybook/channel-postmessage@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/channel-postmessage/-/channel-postmessage-5.2.4.tgz#e3735bdce42156e54bf462083aebaf23245ab5c3"
+  integrity sha1-43Nb3OQhVuVL9GIIOuuvIyRatcM=
   dependencies:
-    "@storybook/channels" "5.2.1"
-    "@storybook/client-logger" "5.2.1"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    telejson "^2.2.2"
-
-"@storybook/channel-postmessage@5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/channel-postmessage/-/channel-postmessage-5.2.3.tgz#e6de415d848a20d0e8a1d32cea178475756d114a"
-  integrity sha1-5t5BXYSKINDoodMs6heEdXVtEUo=
-  dependencies:
-    "@storybook/channels" "5.2.3"
-    "@storybook/client-logger" "5.2.3"
+    "@storybook/channels" "5.2.4"
+    "@storybook/client-logger" "5.2.4"
     core-js "^3.0.1"
     global "^4.3.2"
     telejson "^3.0.2"
 
-"@storybook/channels@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/channels/-/channels-5.2.1.tgz#e5e35f6d9fb1b1fba4f18b171f31d5f6540f3bef"
-  integrity sha1-5eNfbZ+xsfuk8YsXHzHV9lQPO+8=
-  dependencies:
-    core-js "^3.0.1"
-
-"@storybook/channels@5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/channels/-/channels-5.2.3.tgz#843752fe26bd1c505256050bfbf810531c2198a0"
-  integrity sha1-hDdS/ia9HFBSVgUL+/gQUxwhmKA=
+"@storybook/channels@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/channels/-/channels-5.2.4.tgz#7ab5c9478517ddb9e8ac0c4188b408b9d7e6b7e4"
+  integrity sha1-erXJR4UX3bnorAxBiLQIudfmt+Q=
   dependencies:
     core-js "^3.0.1"
 
@@ -1681,17 +1475,17 @@
     shelljs "^0.8.3"
     update-notifier "^3.0.0"
 
-"@storybook/client-api@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/client-api/-/client-api-5.2.1.tgz#bdd335187279a4ab45e20d6d5e9131e5f7098acf"
-  integrity sha1-vdM1GHJ5pKtF4g1tXpEx5fcJis8=
+"@storybook/client-api@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/client-api/-/client-api-5.2.4.tgz#2507a3a739a6f6b13e4afefb938a6f3eab34ed55"
+  integrity sha1-JQejpzmm9rE+Sv77k4pvPqs07VU=
   dependencies:
-    "@storybook/addons" "5.2.1"
-    "@storybook/channel-postmessage" "5.2.1"
-    "@storybook/channels" "5.2.1"
-    "@storybook/client-logger" "5.2.1"
-    "@storybook/core-events" "5.2.1"
-    "@storybook/router" "5.2.1"
+    "@storybook/addons" "5.2.4"
+    "@storybook/channel-postmessage" "5.2.4"
+    "@storybook/channels" "5.2.4"
+    "@storybook/client-logger" "5.2.4"
+    "@storybook/core-events" "5.2.4"
+    "@storybook/router" "5.2.4"
     common-tags "^1.8.0"
     core-js "^3.0.1"
     eventemitter3 "^4.0.0"
@@ -1702,38 +1496,10 @@
     qs "^6.6.0"
     util-deprecate "^1.0.2"
 
-"@storybook/client-api@5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/client-api/-/client-api-5.2.3.tgz#3878cd93d2c1977dc3ef36682c79d0355a3c5872"
-  integrity sha1-OHjNk9LBl33D7zZoLHnQNVo8WHI=
-  dependencies:
-    "@storybook/addons" "5.2.3"
-    "@storybook/channel-postmessage" "5.2.3"
-    "@storybook/channels" "5.2.3"
-    "@storybook/client-logger" "5.2.3"
-    "@storybook/core-events" "5.2.3"
-    "@storybook/router" "5.2.3"
-    common-tags "^1.8.0"
-    core-js "^3.0.1"
-    eventemitter3 "^4.0.0"
-    global "^4.3.2"
-    is-plain-object "^3.0.0"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-    util-deprecate "^1.0.2"
-
-"@storybook/client-logger@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/client-logger/-/client-logger-5.2.1.tgz#5c1f122b65386f04a6ad648808dfa89f2d852d7a"
-  integrity sha1-XB8SK2U4bwSmrWSICN+ony2FLXo=
-  dependencies:
-    core-js "^3.0.1"
-
-"@storybook/client-logger@5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/client-logger/-/client-logger-5.2.3.tgz#a02e7b14c979767665648be4db6185bda17aed88"
-  integrity sha1-oC57FMl5dnZlZIvk22GFvaF67Yg=
+"@storybook/client-logger@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/client-logger/-/client-logger-5.2.4.tgz#6ebe37cbc92e0efe27c7119f52d94f647fbb470c"
+  integrity sha1-br43y8kuDv4nxxGfUtlPZH+7Rww=
   dependencies:
     core-js "^3.0.1"
 
@@ -1754,13 +1520,13 @@
     recast "^0.16.1"
     regenerator-runtime "^0.12.1"
 
-"@storybook/components@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/components/-/components-5.2.1.tgz#a4519c5d435c2c25c481e2b64a768e1e568a223f"
-  integrity sha1-pFGcXUNcLCXEgeK2SnaOHlaKIj8=
+"@storybook/components@5.2.4", "@storybook/components@^5.0.6":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/components/-/components-5.2.4.tgz#9ecd080416eac4e8453030dd601cbeaa32ce4126"
+  integrity sha1-ns0IBBbqxOhFMDDdYBy+qjLOQSY=
   dependencies:
-    "@storybook/client-logger" "5.2.1"
-    "@storybook/theming" "5.2.1"
+    "@storybook/client-logger" "5.2.4"
+    "@storybook/theming" "5.2.4"
     "@types/react-syntax-highlighter" "10.1.0"
     core-js "^3.0.1"
     global "^4.3.2"
@@ -1778,63 +1544,32 @@
     react-textarea-autosize "^7.1.0"
     simplebar-react "^1.0.0-alpha.6"
 
-"@storybook/components@5.2.3", "@storybook/components@^5.0.6":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/components/-/components-5.2.3.tgz#acf185b2ed2d1a64fff008b32cc2b2363d73d8cf"
-  integrity sha1-rPGFsu0tGmT/8AizLMKyNj1z2M8=
-  dependencies:
-    "@storybook/client-logger" "5.2.3"
-    "@storybook/theming" "5.2.3"
-    "@types/react-syntax-highlighter" "10.1.0"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    markdown-to-jsx "^6.9.1"
-    memoizerific "^1.11.3"
-    polished "^3.3.1"
-    popper.js "^1.14.7"
-    prop-types "^15.7.2"
-    react "^16.8.3"
-    react-dom "^16.8.3"
-    react-focus-lock "^1.18.3"
-    react-helmet-async "^1.0.2"
-    react-popper-tooltip "^2.8.3"
-    react-syntax-highlighter "^8.0.1"
-    react-textarea-autosize "^7.1.0"
-    simplebar-react "^1.0.0-alpha.6"
-
-"@storybook/core-events@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/core-events/-/core-events-5.2.1.tgz#bc28d704938d26dd544d0362d38ef08e8cfed916"
-  integrity sha1-vCjXBJONJt1UTQNi047wjoz+2RY=
+"@storybook/core-events@5.2.4", "@storybook/core-events@^5.0.6":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/core-events/-/core-events-5.2.4.tgz#210c968e96e2fc031cad1d3a09b06fa69ae433fc"
+  integrity sha1-IQyWjpbi/AMcrR06CbBvpprkM/w=
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/core-events@5.2.3", "@storybook/core-events@^5.0.6":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/core-events/-/core-events-5.2.3.tgz#b592273a1e00040dcec258e3bd0ca2fd53357c00"
-  integrity sha1-tZInOh4ABA3OwljjvQyi/VM1fAA=
-  dependencies:
-    core-js "^3.0.1"
-
-"@storybook/core@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/core/-/core-5.2.1.tgz#3aa17c6fa9b02704723501d32884453869e3c06c"
-  integrity sha1-OqF8b6mwJwRyNQHTKIRFOGnjwGw=
+"@storybook/core@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/core/-/core-5.2.4.tgz#188509ac0eb0c85144816c385c21acfb5c8fbefd"
+  integrity sha1-GIUJrA6wyFFEgWw4XCGs+1yPvv0=
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.3.3"
     "@babel/plugin-proposal-object-rest-spread" "^7.3.2"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
     "@babel/plugin-transform-react-constant-elements" "^7.2.0"
     "@babel/preset-env" "^7.4.5"
-    "@storybook/addons" "5.2.1"
-    "@storybook/channel-postmessage" "5.2.1"
-    "@storybook/client-api" "5.2.1"
-    "@storybook/client-logger" "5.2.1"
-    "@storybook/core-events" "5.2.1"
-    "@storybook/node-logger" "5.2.1"
-    "@storybook/router" "5.2.1"
-    "@storybook/theming" "5.2.1"
-    "@storybook/ui" "5.2.1"
+    "@storybook/addons" "5.2.4"
+    "@storybook/channel-postmessage" "5.2.4"
+    "@storybook/client-api" "5.2.4"
+    "@storybook/client-logger" "5.2.4"
+    "@storybook/core-events" "5.2.4"
+    "@storybook/node-logger" "5.2.4"
+    "@storybook/router" "5.2.4"
+    "@storybook/theming" "5.2.4"
+    "@storybook/ui" "5.2.4"
     airbnb-js-shims "^1 || ^2"
     ansi-to-html "^0.6.11"
     autoprefixer "^9.4.9"
@@ -1890,17 +1625,6 @@
     webpack-dev-middleware "^3.7.0"
     webpack-hot-middleware "^2.25.0"
 
-"@storybook/node-logger@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/node-logger/-/node-logger-5.2.1.tgz#00d8c0dc9dfd482e7d1d244a59c46726c6b761d9"
-  integrity sha1-ANjA3J39SC59HSRKWcRnJsa3Ydk=
-  dependencies:
-    chalk "^2.4.2"
-    core-js "^3.0.1"
-    npmlog "^4.1.2"
-    pretty-hrtime "^1.0.3"
-    regenerator-runtime "^0.12.1"
-
 "@storybook/node-logger@5.2.4":
   version "5.2.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/node-logger/-/node-logger-5.2.4.tgz#52dc380c76bdac68de35e7d72efe920c3ba52a23"
@@ -1913,17 +1637,18 @@
     regenerator-runtime "^0.12.1"
 
 "@storybook/react@^5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/react/-/react-5.2.1.tgz#860970fa8f0d49967862b496af4ef3712f0b96dd"
-  integrity sha1-hglw+o8NSZZ4YrSWr07zcS8Llt0=
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/react/-/react-5.2.4.tgz#305db3fa7cd113c185aba97e5239d7754dc14859"
+  integrity sha1-MF2z+nzRE8GFq6l+UjnXdU3BSFk=
   dependencies:
     "@babel/plugin-transform-react-constant-elements" "^7.2.0"
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
-    "@storybook/addons" "5.2.1"
-    "@storybook/core" "5.2.1"
-    "@storybook/node-logger" "5.2.1"
+    "@storybook/addons" "5.2.4"
+    "@storybook/core" "5.2.4"
+    "@storybook/node-logger" "5.2.4"
     "@svgr/webpack" "^4.0.3"
+    "@types/webpack-env" "^1.13.7"
     babel-plugin-add-react-displayname "^0.0.5"
     babel-plugin-named-asset-import "^0.3.1"
     babel-plugin-react-docgen "^3.0.0"
@@ -1939,32 +1664,6 @@
     semver "^6.0.0"
     webpack "^4.33.0"
 
-"@storybook/router@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/router/-/router-5.2.1.tgz#9c49df79343d3be10c7f984858fb5c9ae3eb7491"
-  integrity sha1-nEnfeTQ9O+EMf5hIWPtcmuPrdJE=
-  dependencies:
-    "@reach/router" "^1.2.1"
-    "@types/reach__router" "^1.2.3"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-
-"@storybook/router@5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/router/-/router-5.2.3.tgz#d10284325820275ab7971621333988b5021dd3c9"
-  integrity sha1-0QKEMlggJ1q3lxYhMzmItQId08k=
-  dependencies:
-    "@reach/router" "^1.2.1"
-    "@types/reach__router" "^1.2.3"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-    qs "^6.6.0"
-
 "@storybook/router@5.2.4":
   version "5.2.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/router/-/router-5.2.4.tgz#e47af60478da7730c7d82de3d089d12c17077333"
@@ -1978,14 +1677,14 @@
     memoizerific "^1.11.3"
     qs "^6.6.0"
 
-"@storybook/theming@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/theming/-/theming-5.2.1.tgz#913e383632e4702035a107c2cc5e5cb27231b389"
-  integrity sha1-kT44NjLkcCA1oQfCzF5csnIxs4k=
+"@storybook/theming@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/theming/-/theming-5.2.4.tgz#79c99f65992082fdb4d39fb652db435dd6bebaca"
+  integrity sha1-ecmfZZkggv2005+2UttDXda+uso=
   dependencies:
     "@emotion/core" "^10.0.14"
     "@emotion/styled" "^10.0.14"
-    "@storybook/client-logger" "5.2.1"
+    "@storybook/client-logger" "5.2.4"
     common-tags "^1.8.0"
     core-js "^3.0.1"
     deep-object-diff "^1.1.0"
@@ -1996,39 +1695,19 @@
     prop-types "^15.7.2"
     resolve-from "^5.0.0"
 
-"@storybook/theming@5.2.3":
-  version "5.2.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/theming/-/theming-5.2.3.tgz#b506fa2170d850953bfe84e2cb07e81e647e8c9a"
-  integrity sha1-tQb6IXDYUJU7/oTiywfoHmR+jJo=
+"@storybook/ui@5.2.4":
+  version "5.2.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/ui/-/ui-5.2.4.tgz#7116c9be0dcdcc5d5b425d998263de1e27cdc078"
+  integrity sha1-cRbJvg3NzF1bQl2ZgmPeHifNwHg=
   dependencies:
-    "@emotion/core" "^10.0.14"
-    "@emotion/styled" "^10.0.14"
-    "@storybook/client-logger" "5.2.3"
-    common-tags "^1.8.0"
-    core-js "^3.0.1"
-    deep-object-diff "^1.1.0"
-    emotion-theming "^10.0.14"
-    global "^4.3.2"
-    memoizerific "^1.11.3"
-    polished "^3.3.1"
-    prop-types "^15.7.2"
-    resolve-from "^5.0.0"
-
-"@storybook/ui@5.2.1":
-  version "5.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@storybook/ui/-/ui-5.2.1.tgz#ceba1657a232efd10f839027f8ae274e370c89f6"
-  integrity sha1-zroWV6Iy79EPg5An+K4nTjcMifY=
-  dependencies:
-    "@storybook/addon-actions" "5.2.1"
-    "@storybook/addon-knobs" "5.2.1"
-    "@storybook/addons" "5.2.1"
-    "@storybook/api" "5.2.1"
-    "@storybook/channels" "5.2.1"
-    "@storybook/client-logger" "5.2.1"
-    "@storybook/components" "5.2.1"
-    "@storybook/core-events" "5.2.1"
-    "@storybook/router" "5.2.1"
-    "@storybook/theming" "5.2.1"
+    "@storybook/addons" "5.2.4"
+    "@storybook/api" "5.2.4"
+    "@storybook/channels" "5.2.4"
+    "@storybook/client-logger" "5.2.4"
+    "@storybook/components" "5.2.4"
+    "@storybook/core-events" "5.2.4"
+    "@storybook/router" "5.2.4"
+    "@storybook/theming" "5.2.4"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     core-js-pure "^3.0.1"
@@ -2044,7 +1723,7 @@
     qs "^6.6.0"
     react "^16.8.3"
     react-dom "^16.8.3"
-    react-draggable "^3.3.2"
+    react-draggable "^4.0.3"
     react-helmet-async "^1.0.2"
     react-hotkeys "2.0.0-pre4"
     react-sizeme "^2.6.7"
@@ -2052,7 +1731,7 @@
     resolve-from "^5.0.0"
     semver "^6.0.0"
     store2 "^2.7.1"
-    telejson "^2.2.2"
+    telejson "^3.0.2"
     util-deprecate "^1.0.2"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
@@ -2248,9 +1927,9 @@
   integrity sha1-PcoOPzOyAPx9ETnAzZbBJoyt/Z0=
 
 "@types/node@*":
-  version "12.7.12"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/node/-/node-12.7.12.tgz#7c6c571cc2f3f3ac4a59a5f2bd48f5bdbc8653cc"
-  integrity sha1-fGxXHMLz86xKWaXyvUj1vbyGU8w=
+  version "12.11.1"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/node/-/node-12.11.1.tgz#1fd7b821f798b7fa29f667a1be8f3442bb8922a3"
+  integrity sha1-H9e4IfeYt/op9mehvo80QruJIqM=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -2268,9 +1947,9 @@
   integrity sha1-aQoUdbhPKohP0HzXl8APXzE1bqg=
 
 "@types/reach__router@^1.2.3":
-  version "1.2.5"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/reach__router/-/reach__router-1.2.5.tgz#add874f43b9733175be2b19de59602b91cc90860"
-  integrity sha1-rdh09DuXMxdb4rGd5ZYCuRzJCGA=
+  version "1.2.6"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/reach__router/-/reach__router-1.2.6.tgz#b14cf1adbd1a365d204bbf6605cd9dd7b8816c87"
+  integrity sha1-sUzxrb0aNl0gS79mBc2d17iBbIc=
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
@@ -2290,9 +1969,9 @@
     "@types/react" "*"
 
 "@types/react@*":
-  version "16.9.4"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/react/-/react-16.9.4.tgz#de8cf5e5e2838659fb78fa93181078469eeb19fc"
-  integrity sha1-3oz15eKDhln7ePqTGBB4Rp7rGfw=
+  version "16.9.9"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/react/-/react-16.9.9.tgz#a62c6f40f04bc7681be5e20975503a64fe783c3a"
+  integrity sha1-pixvQPBLx2gb5eIJdVA6ZP54PDo=
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -2306,6 +1985,11 @@
   version "2.0.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha1-nAiGeYdvN061mD8VDUeHqm+zLX4=
+
+"@types/webpack-env@^1.13.7":
+  version "1.14.1"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/@types/webpack-env/-/webpack-env-1.14.1.tgz#0d8a53f308f017c53a5ddc3d07f4d6fa76b790d7"
+  integrity sha1-DYpT8wjwF8U6Xdw9B/TW+na3kNc=
 
 "@types/yargs-parser@*":
   version "13.1.0"
@@ -2519,10 +2203,15 @@ acorn@^5.5.3:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
   integrity sha1-Z6ojG/iBKXS4UjWpZ3Hra9B+onk=
 
-acorn@^6.0.1, acorn@^6.1.1, acorn@^6.2.1:
+acorn@^6.0.1, acorn@^6.2.1:
   version "6.3.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/acorn/-/acorn-6.3.0.tgz#0087509119ffa4fc0a0041d1e93a417e68cb856e"
   integrity sha1-AIdQkRn/pPwKAEHR6TpBfmjLhW4=
+
+acorn@^7.1.0:
+  version "7.1.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/acorn/-/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
+  integrity sha1-lJ028sKSU12mAig1hsJHfFfrLWw=
 
 address@1.1.2, address@^1.0.1:
   version "1.1.2"
@@ -2664,11 +2353,11 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
     color-convert "^1.9.0"
 
 ansi-to-html@^0.6.11:
-  version "0.6.11"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/ansi-to-html/-/ansi-to-html-0.6.11.tgz#5093fc4962186c0e9343dec572a4f71abdc93439"
-  integrity sha1-UJP8SWIYbA6TQ97FcqT3Gr3JNDk=
+  version "0.6.12"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/ansi-to-html/-/ansi-to-html-0.6.12.tgz#9dcd1646f17770d02ec065615e97f979f4e313cb"
+  integrity sha1-nc0WRvF3cNAuwGVhXpf5efTjE8s=
   dependencies:
-    entities "^1.1.1"
+    entities "^1.1.2"
 
 anymatch@^2.0.0:
   version "2.0.0"
@@ -2782,21 +2471,21 @@ array.prototype.find@^2.1.0:
     es-abstract "^1.13.0"
 
 array.prototype.flat@^1.2.1:
-  version "1.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/array.prototype.flat/-/array.prototype.flat-1.2.1.tgz#812db8f02cad24d3fab65dd67eabe3b8903494a4"
-  integrity sha1-gS248CytJNP6tl3WfqvjuJA0lKQ=
+  version "1.2.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/array.prototype.flat/-/array.prototype.flat-1.2.2.tgz#8f3c71d245ba349b6b64b4078f76f5576f1fd723"
+  integrity sha1-jzxx0kW6NJtrZLQHj3b1V28f1yM=
   dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.10.0"
+    define-properties "^1.1.3"
+    es-abstract "^1.15.0"
     function-bind "^1.1.1"
 
 array.prototype.flatmap@^1.2.1:
-  version "1.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/array.prototype.flatmap/-/array.prototype.flatmap-1.2.1.tgz#3103cd4826ef90019c9b0a4839b2535fa6faf4e9"
-  integrity sha1-MQPNSCbvkAGcmwpIObJTX6b69Ok=
+  version "1.2.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/array.prototype.flatmap/-/array.prototype.flatmap-1.2.2.tgz#28d621d351c19a62b84331b01669395ef6cef4c4"
+  integrity sha1-KNYh01HBmmK4QzGwFmk5XvbO9MQ=
   dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.10.0"
+    define-properties "^1.1.3"
+    es-abstract "^1.15.0"
     function-bind "^1.1.1"
 
 arrify@^1.0.1:
@@ -2901,17 +2590,17 @@ atob@^2.1.1:
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
 autoprefixer@^9.4.9:
-  version "9.6.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/autoprefixer/-/autoprefixer-9.6.1.tgz#51967a02d2d2300bb01866c1611ec8348d355a47"
-  integrity sha1-UZZ6AtLSMAuwGGbBYR7INI01Wkc=
+  version "9.6.5"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/autoprefixer/-/autoprefixer-9.6.5.tgz#98f4afe7e93cccf323287515d426019619775e5e"
+  integrity sha1-mPSv5+k8zPMjKHUV1CYBlhl3Xl4=
   dependencies:
-    browserslist "^4.6.3"
-    caniuse-lite "^1.0.30000980"
+    browserslist "^4.7.0"
+    caniuse-lite "^1.0.30000999"
     chalk "^2.4.2"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^7.0.17"
-    postcss-value-parser "^4.0.0"
+    postcss "^7.0.18"
+    postcss-value-parser "^4.0.2"
 
 aws-sign2@~0.7.0:
   version "0.7.0"
@@ -3021,9 +2710,9 @@ babel-plugin-dynamic-import-node@2.3.0, babel-plugin-dynamic-import-node@^2.3.0:
     object.assign "^4.1.0"
 
 babel-plugin-emotion@^10.0.14, babel-plugin-emotion@^10.0.17:
-  version "10.0.19"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/babel-plugin-emotion/-/babel-plugin-emotion-10.0.19.tgz#67b9b213f7505c015f163a387a005c12c502b1de"
-  integrity sha1-Z7myE/dQXAFfFjo4egBcEsUCsd4=
+  version "10.0.21"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/babel-plugin-emotion/-/babel-plugin-emotion-10.0.21.tgz#9ebeb12edeea3e60a5476b0e07c9868605e65968"
+  integrity sha1-nr6xLt7qPmClR2sOB8mGhgXmWWg=
   dependencies:
     "@babel/helper-module-imports" "^7.0.0"
     "@emotion/hash" "0.7.3"
@@ -3287,7 +2976,7 @@ babel-preset-react-app@^9.0.0:
     babel-plugin-macros "2.6.1"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
 
-babel-runtime@^6.18.0, babel-runtime@^6.26.0:
+babel-runtime@^6.18.0:
   version "6.26.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -3368,12 +3057,7 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bluebird@3.7.0, bluebird@^3.3.5, bluebird@^3.5.5:
-  version "3.7.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/bluebird/-/bluebird-3.7.0.tgz#56a6a886e03f6ae577cffedeb524f8f2450293cf"
-  integrity sha1-VqaohuA/auV3z/7etST48kUCk88=
-
-bluebird@^3.5.1, bluebird@^3.5.3:
+bluebird@3.7.1, bluebird@^3.3.5, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.1"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
   integrity sha1-33DjArRx10c0iazyapPWO1P4dN4=
@@ -3525,7 +3209,7 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@4.7.0, browserslist@^4.6.0, browserslist@^4.6.3, browserslist@^4.6.6:
+browserslist@4.7.0:
   version "4.7.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/browserslist/-/browserslist-4.7.0.tgz#9ee89225ffc07db03409f2fee524dc8227458a17"
   integrity sha1-nuiSJf/AfbA0CfL+5STcgidFihc=
@@ -3533,6 +3217,15 @@ browserslist@4.7.0, browserslist@^4.6.0, browserslist@^4.6.3, browserslist@^4.6.
     caniuse-lite "^1.0.30000989"
     electron-to-chromium "^1.3.247"
     node-releases "^1.1.29"
+
+browserslist@^4.6.0, browserslist@^4.7.0:
+  version "4.7.1"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/browserslist/-/browserslist-4.7.1.tgz#bd400d1aea56538580e8c4d5f1c54ac11b5ab468"
+  integrity sha1-vUANGupWU4WA6MTV8cVKwRtatGg=
+  dependencies:
+    caniuse-lite "^1.0.30000999"
+    electron-to-chromium "^1.3.284"
+    node-releases "^1.1.36"
 
 bser@^2.0.0:
   version "2.1.0"
@@ -3719,10 +3412,10 @@ can-use-dom@^0.1.0:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/can-use-dom/-/can-use-dom-0.1.0.tgz#22cc4a34a0abc43950f42c6411024a3f6366b45a"
   integrity sha1-IsxKNKCrxDlQ9CxkEQJKP2NmtFo=
 
-caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000989:
-  version "1.0.30000998"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/caniuse-lite/-/caniuse-lite-1.0.30000998.tgz#7227a8046841e7d01e156ae7227a504d065f6744"
-  integrity sha1-cieoBGhB59AeFWrnInpQTQZfZ0Q=
+caniuse-lite@^1.0.30000989, caniuse-lite@^1.0.30000999:
+  version "1.0.30000999"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/caniuse-lite/-/caniuse-lite-1.0.30000999.tgz#427253a69ad7bea4aa8d8345687b8eec51ca0e43"
+  integrity sha1-QnJTpprXvqSqjYNFaHuO7FHKDkM=
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -4029,15 +3722,10 @@ commander@2.20.0:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha1-1YuytcHuj4ew00ACfp6U4iLFpCI=
 
-commander@^2.11.0:
+commander@^2.11.0, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=
-
-commander@^2.19.0, commander@^2.20.0, commander@~2.20.0:
-  version "2.20.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/commander/-/commander-2.20.1.tgz#3863ce3ca92d0831dcf2a102f5fb4b5926afd0f9"
-  integrity sha1-OGPOPKktCDHc8qEC9ftLWSav0Pk=
 
 commander@^3.0.2:
   version "3.0.2"
@@ -4162,37 +3850,32 @@ copy-to-clipboard@^3.0.8:
     toggle-selection "^1.0.6"
 
 core-js-compat@^3.1.1:
-  version "3.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js-compat/-/core-js-compat-3.2.1.tgz#0cbdbc2e386e8e00d3b85dc81c848effec5b8150"
-  integrity sha1-DL28LjhujgDTuF3IHISO/+xbgVA=
+  version "3.3.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js-compat/-/core-js-compat-3.3.2.tgz#1096c989c1b929ede06b5b6b4768dc4439078c03"
+  integrity sha1-EJbJicG5Ke3ga1trR2jcRDkHjAM=
   dependencies:
-    browserslist "^4.6.6"
+    browserslist "^4.7.0"
     semver "^6.3.0"
 
 core-js-pure@^3.0.1:
-  version "3.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js-pure/-/core-js-pure-3.2.1.tgz#879a23699cff46175bfd2d09158b5c50645a3c45"
-  integrity sha1-h5ojaZz/Rhdb/S0JFYtcUGRaPEU=
+  version "3.3.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js-pure/-/core-js-pure-3.3.2.tgz#ace92f9744ef1f6129f73ac4df4936b6df9a3cbe"
+  integrity sha1-rOkvl0TvH2Ep9zrE30k2tt+aPL4=
 
 core-js@^1.0.0:
   version "1.2.7"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
-core-js@^2.4.0:
-  version "2.6.9"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
-  integrity sha1-a0shRiDINBUuF5Mjcn/Bl0GwhPI=
-
-core-js@^2.6.5:
+core-js@^2.4.0, core-js@^2.6.5:
   version "2.6.10"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js/-/core-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
   integrity sha1-iluDkfjMcBPacDQRzltYVwYwDX8=
 
 core-js@^3.0.1, core-js@^3.0.4:
-  version "3.2.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js/-/core-js-3.2.1.tgz#cd41f38534da6cc59f7db050fe67307de9868b09"
-  integrity sha1-zUHzhTTabMWffbBQ/mcwfemGiwk=
+  version "3.3.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/core-js/-/core-js-3.3.2.tgz#cd42da1d7b0bb33ef11326be3a721934277ceb42"
+  integrity sha1-zULaHXsLsz7xEya+OnIZNCd860I=
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -4409,22 +4092,34 @@ csso@^3.5.1:
   dependencies:
     css-tree "1.0.0-alpha.29"
 
-cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0", cssom@^0.3.6:
+cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0", cssom@~0.3.6:
   version "0.3.8"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/cssom/-/cssom-0.3.8.tgz#9f1276f5b2b463f2114d3f2c75250af8c1a36f4a"
   integrity sha1-nxJ29bK0Y/IRTT8sdSUK+MGjb0o=
 
-cssstyle@^1.0.0, cssstyle@^1.2.2:
+cssom@^0.4.1:
+  version "0.4.1"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/cssom/-/cssom-0.4.1.tgz#b24111d236b6dbd00cdfacb5ab67a20473381fe3"
+  integrity sha1-skER0ja229AM36y1q2eiBHM4H+M=
+
+cssstyle@^1.0.0:
   version "1.4.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/cssstyle/-/cssstyle-1.4.0.tgz#9d31328229d3c565c61e586b02041a28fccdccf1"
   integrity sha1-nTEyginTxWXGHlhrAgQaKPzNzPE=
   dependencies:
     cssom "0.3.x"
 
+cssstyle@^2.0.0:
+  version "2.0.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/cssstyle/-/cssstyle-2.0.0.tgz#911f0fe25532db4f5d44afc83f89cc4b82c97fe3"
+  integrity sha1-kR8P4lUy209dRK/IP4nMS4LJf+M=
+  dependencies:
+    cssom "~0.3.6"
+
 csstype@^2.2.0, csstype@^2.5.7:
-  version "2.6.6"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
-  integrity sha1-w0+CJqlLuxDDLMDXFK/flCKR/EE=
+  version "2.6.7"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/csstype/-/csstype-2.6.7.tgz#20b0024c20b6718f4eda3853a1f5a1cce7f5e4a5"
+  integrity sha1-ILACTCC2cY9O2jhTofWhzOf15KU=
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -4785,9 +4480,9 @@ dotenv@^6.2.0:
   integrity sha1-lBwEEFNdlCyL7PKNPzV9vZ1HYGQ=
 
 dotenv@^8.0.0:
-  version "8.1.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/dotenv/-/dotenv-8.1.0.tgz#d811e178652bfb8a1e593c6dd704ec7e90d85ea2"
-  integrity sha1-2BHheGUr+4oeWTxt1wTsfpDYXqI=
+  version "8.2.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha1-l+YZJZradQ7qPk6j4mvO6lQksWo=
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -4827,10 +4522,10 @@ ejs@^2.6.1:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/ejs/-/ejs-2.7.1.tgz#5b5ab57f718b79d4aca9254457afecd36fa80228"
   integrity sha1-W1q1f3GLedSsqSVEV6/s02+oAig=
 
-electron-to-chromium@^1.3.247:
-  version "1.3.273"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/electron-to-chromium/-/electron-to-chromium-1.3.273.tgz#94872d6823219f2812f2e35a2ce2a7d03c1eaa3f"
-  integrity sha1-lIctaCMhnygS8uNaLOKn0Dweqj8=
+electron-to-chromium@^1.3.247, electron-to-chromium@^1.3.284:
+  version "1.3.285"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/electron-to-chromium/-/electron-to-chromium-1.3.285.tgz#909576db2ee4dfec74a87aa30c92f66ebfc78748"
+  integrity sha1-kJV22y7k3+x0qHqjDJL2br/Hh0g=
 
 element-resize-detector@^1.1.15:
   version "1.1.15"
@@ -4891,15 +4586,15 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
     once "^1.4.0"
 
 enhanced-resolve@^4.1.0:
-  version "4.1.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/enhanced-resolve/-/enhanced-resolve-4.1.0.tgz#41c7e0bfdfe74ac1ffe1e57ad6a5c6c9f3742a7f"
-  integrity sha1-Qcfgv9/nSsH/4eV61qXGyfN0Kn8=
+  version "4.1.1"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/enhanced-resolve/-/enhanced-resolve-4.1.1.tgz#2937e2b8066cd0fe7ce0990a98f0d71a35189f66"
+  integrity sha1-KTfiuAZs0P584JkKmPDXGjUYn2Y=
   dependencies:
     graceful-fs "^4.1.2"
-    memory-fs "^0.4.0"
+    memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-entities@^1.1.1, entities@~1.1.1:
+entities@^1.1.1, entities@^1.1.2, entities@~1.1.1:
   version "1.1.2"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha1-vfpzUplmTfr9NFKe1PhSKidf6lY=
@@ -4995,7 +4690,7 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.10.0, es-abstract@^1.11.0, es-abstract@^1.12.0, es-abstract@^1.13.0, es-abstract@^1.14.2, es-abstract@^1.15.0, es-abstract@^1.4.3, es-abstract@^1.5.1, es-abstract@^1.7.0:
+es-abstract@^1.12.0, es-abstract@^1.13.0, es-abstract@^1.14.2, es-abstract@^1.15.0, es-abstract@^1.4.3, es-abstract@^1.5.1, es-abstract@^1.7.0:
   version "1.15.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/es-abstract/-/es-abstract-1.15.0.tgz#8884928ec7e40a79e3c9bc812d37d10c8b24cc57"
   integrity sha1-iISSjsfkCnnjybyBLTfRDIskzFc=
@@ -5593,9 +5288,9 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 focus-lock@^0.6.3:
-  version "0.6.5"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/focus-lock/-/focus-lock-0.6.5.tgz#f6eb37832a9b1b205406175f5277396a28c0fce1"
-  integrity sha1-9us3gyqbGyBUBhdfUnc5aijA/OE=
+  version "0.6.6"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/focus-lock/-/focus-lock-0.6.6.tgz#98119a755a38cfdbeda0280eaa77e307eee850c7"
+  integrity sha1-mBGadVo4z9vtoCgOqnfjB+7oUMc=
 
 for-in@^0.1.3:
   version "0.1.8"
@@ -6267,12 +5962,7 @@ homedir-polyfill@^1.0.0:
   dependencies:
     parse-passwd "^1.0.0"
 
-hosted-git-info@^2.1.4:
-  version "2.8.4"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/hosted-git-info/-/hosted-git-info-2.8.4.tgz#44119abaf4bc64692a16ace34700fed9c03e2546"
-  integrity sha1-RBGauvS8ZGkqFqzjRwD+2cA+JUY=
-
-hosted-git-info@^2.7.1:
+hosted-git-info@^2.1.4, hosted-git-info@^2.7.1:
   version "2.8.5"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/hosted-git-info/-/hosted-git-info-2.8.5.tgz#759cfcf2c4d156ade59b0b2dfabddc42a6b9c70c"
   integrity sha1-dZz88sTRVq3lmwst+r3cQqa5xww=
@@ -6468,9 +6158,9 @@ iferr@^0.1.5:
   integrity sha1-xg7taebY/bazEEofy8ocGS3FtQE=
 
 ignore-walk@^3.0.1:
-  version "3.0.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/ignore-walk/-/ignore-walk-3.0.2.tgz#99d83a246c196ea5c93ef9315ad7b0819c35069b"
-  integrity sha1-mdg6JGwZbqXJPvkxWtewgZw1Bps=
+  version "3.0.3"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/ignore-walk/-/ignore-walk-3.0.3.tgz#017e2447184bfeade7c238e4aefdd1e8f95b1e37"
+  integrity sha1-AX4kRxhL/q3nwjjkrv3R6PlbHjc=
   dependencies:
     minimatch "^3.0.4"
 
@@ -6634,7 +6324,7 @@ invariant@2.2.2:
   dependencies:
     loose-envify "^1.0.0"
 
-invariant@2.2.4, invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.3, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha1-YQ88ksk1nOHbYW5TgAjSP/NRWOY=
@@ -6774,14 +6464,6 @@ is-directory@^0.3.1:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-directory/-/is-directory-0.3.1.tgz#61339b6f2475fc772fd9c9d83f5c8575dc154ae1"
   integrity sha1-YTObbyR1/Hcv2cnYP1yFddwVSuE=
 
-is-dom@^1.0.9:
-  version "1.1.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-dom/-/is-dom-1.1.0.tgz#af1fced292742443bb59ca3f76ab5e80907b4e8a"
-  integrity sha1-rx/O0pJ0JEO7Wco/dqtegJB7Too=
-  dependencies:
-    is-object "^1.0.1"
-    is-window "^1.0.2"
-
 is-extendable@^0.1.0, is-extendable@^0.1.1:
   version "0.1.1"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-extendable/-/is-extendable-0.1.1.tgz#62b110e289a471418e3ec36a617d472e301dfc89"
@@ -6882,11 +6564,6 @@ is-obj@^1.0.0:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
   integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
 
-is-object@^1.0.1:
-  version "1.0.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-object/-/is-object-1.0.1.tgz#8952688c5ec2ffd6b03ecc85e769e02903083470"
-  integrity sha1-iVJojF7C/9awPsyF52ngKQMINHA=
-
 is-path-inside@^1.0.0:
   version "1.0.1"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-path-inside/-/is-path-inside-1.0.1.tgz#8ef5b7de50437a3fdca6b4e865ef7aa55cb48036"
@@ -6976,11 +6653,6 @@ is-whitespace-character@^1.0.0:
   version "1.0.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-whitespace-character/-/is-whitespace-character-1.0.3.tgz#b3ad9546d916d7d3ffa78204bca0c26b56257fac"
   integrity sha1-s62VRtkW19P/p4IEvKDCa1Ylf6w=
-
-is-window@^1.0.2:
-  version "1.0.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/is-window/-/is-window-1.0.2.tgz#2c896ca53db97de45d3c33133a65d8c9f563480d"
-  integrity sha1-LIlspT25feRdPDMTOmXYyfVjSA0=
 
 is-windows@^0.2.0:
   version "0.2.0"
@@ -7590,16 +7262,16 @@ jsdom@^11.5.1:
     xml-name-validator "^3.0.0"
 
 jsdom@^15.1.1:
-  version "15.1.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/jsdom/-/jsdom-15.1.1.tgz#21ed01f81d95ef4327f3e564662aef5e65881252"
-  integrity sha1-Ie0B+B2V70Mn8+VkZirvXmWIElI=
+  version "15.2.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/jsdom/-/jsdom-15.2.0.tgz#4baead4f464e733533ed6ac607ce440918cf5cbb"
+  integrity sha1-S66tT0ZOczUz7WrGB85ECRjPXLs=
   dependencies:
     abab "^2.0.0"
-    acorn "^6.1.1"
+    acorn "^7.1.0"
     acorn-globals "^4.3.2"
     array-equal "^1.0.0"
-    cssom "^0.3.6"
-    cssstyle "^1.2.2"
+    cssom "^0.4.1"
+    cssstyle "^2.0.0"
     data-urls "^1.1.0"
     domexception "^1.0.1"
     escodegen "^1.11.1"
@@ -8327,10 +7999,18 @@ memoizerific@^1.11.3:
   dependencies:
     map-or-similar "^1.5.0"
 
-memory-fs@^0.4.0, memory-fs@^0.4.1:
+memory-fs@^0.4.1:
   version "0.4.1"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
   integrity sha1-OpoguEYlI+RHz7x+i7gO1me/xVI=
+  dependencies:
+    errno "^0.1.3"
+    readable-stream "^2.0.1"
+
+memory-fs@^0.5.0:
+  version "0.5.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/memory-fs/-/memory-fs-0.5.0.tgz#324c01288b88652966d161db77838720845a8e3c"
+  integrity sha1-MkwBKIuIZSlm0WHbd4OHIIRajjw=
   dependencies:
     errno "^0.1.3"
     readable-stream "^2.0.1"
@@ -8803,12 +8483,12 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node-releases@^1.1.29:
-  version "1.1.33"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/node-releases/-/node-releases-1.1.33.tgz#349f10291234624574f44cf32b7de259bf028303"
-  integrity sha1-NJ8QKRI0YkV09EzzK33iWb8CgwM=
+node-releases@^1.1.29, node-releases@^1.1.36:
+  version "1.1.36"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/node-releases/-/node-releases-1.1.36.tgz#44b7cb8254138e87bdbfa47761d0f825e20900b4"
+  integrity sha1-RLfLglQTjoe9v6R3YdD4JeIJALQ=
   dependencies:
-    semver "^5.3.0"
+    semver "^6.3.0"
 
 node-sass@^4.12.0:
   version "4.12.0"
@@ -8924,18 +8604,10 @@ npm-package-arg@^6.0.0, npm-package-arg@^6.1.0:
     semver "^5.6.0"
     validate-npm-package-name "^3.0.0"
 
-npm-packlist@^1.1.12:
+npm-packlist@^1.1.12, npm-packlist@^1.1.6:
   version "1.4.6"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/npm-packlist/-/npm-packlist-1.4.6.tgz#53ba3ed11f8523079f1457376dd379ee4ea42ff4"
   integrity sha1-U7o+0R+FIwefFFc3bdN57k6kL/Q=
-  dependencies:
-    ignore-walk "^3.0.1"
-    npm-bundled "^1.0.1"
-
-npm-packlist@^1.1.6:
-  version "1.4.4"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/npm-packlist/-/npm-packlist-1.4.4.tgz#866224233850ac534b63d1a6e76050092b5d2f44"
-  integrity sha1-hmIkIzhQrFNLY9Gm52BQCStdL0Q=
   dependencies:
     ignore-walk "^3.0.1"
     npm-bundled "^1.0.1"
@@ -9090,17 +8762,7 @@ object.entries@^1.0.4, object.entries@^1.1.0:
     function-bind "^1.1.1"
     has "^1.0.3"
 
-"object.fromentries@^2.0.0 || ^1.0.0":
-  version "2.0.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/object.fromentries/-/object.fromentries-2.0.0.tgz#49a543d92151f8277b3ac9600f1e930b189d30ab"
-  integrity sha1-SaVD2SFR+Cd7OslgDx6TCxidMKs=
-  dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.11.0"
-    function-bind "^1.1.1"
-    has "^1.0.1"
-
-object.fromentries@^2.0.1:
+"object.fromentries@^2.0.0 || ^1.0.0", object.fromentries@^2.0.1:
   version "2.0.1"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/object.fromentries/-/object.fromentries-2.0.1.tgz#050f077855c7af8ae6649f45c80b16ee2d31e704"
   integrity sha1-BQ8HeFXHr4rmZJ9FyAsW7i0x5wQ=
@@ -9654,9 +9316,9 @@ polished@^3.3.1:
     "@babel/runtime" "^7.4.5"
 
 popper.js@^1.14.4, popper.js@^1.14.7:
-  version "1.15.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
-  integrity sha1-VWC5m7rXZH6fqkdca4BWYh9aT/I=
+  version "1.16.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/popper.js/-/popper.js-1.16.0.tgz#2e1816bcbbaa518ea6c2e15a466f4cb9c6e2fbb3"
+  integrity sha1-LhgWvLuqUY6mwuFaRm9Mucbi+7M=
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
@@ -9730,12 +9392,12 @@ postcss-selector-parser@^6.0.0, postcss-selector-parser@^6.0.2:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-value-parser@^4.0.0:
+postcss-value-parser@^4.0.0, postcss-value-parser@^4.0.2:
   version "4.0.2"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/postcss-value-parser/-/postcss-value-parser-4.0.2.tgz#482282c09a42706d1fc9a069b73f44ec08391dc9"
   integrity sha1-SCKCwJpCcG0fyaBptz9E7Ag5Hck=
 
-postcss@^7.0.0, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.5, postcss@^7.0.6:
+postcss@^7.0.0, postcss@^7.0.14, postcss@^7.0.16, postcss@^7.0.17, postcss@^7.0.18, postcss@^7.0.5, postcss@^7.0.6:
   version "7.0.18"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/postcss/-/postcss-7.0.18.tgz#4b9cda95ae6c069c67a4d933029eddd4838ac233"
   integrity sha1-S5zala5sBpxnpNkzAp7d1IOKwjM=
@@ -9874,7 +9536,7 @@ prop-types-exact@^1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -9883,17 +9545,10 @@ prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, 
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-property-information@^5.0.0, property-information@^5.3.0:
+property-information@^5.0.0, property-information@^5.0.1, property-information@^5.3.0:
   version "5.3.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/property-information/-/property-information-5.3.0.tgz#bc87ac82dc4e72a31bb62040544b1bf9653da039"
   integrity sha1-vIesgtxOcqMbtiBAVEsb+WU9oDk=
-  dependencies:
-    xtend "^4.0.1"
-
-property-information@^5.0.1:
-  version "5.2.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/property-information/-/property-information-5.2.2.tgz#20555eafd2296278a682e5a51d5123e7878ecc30"
-  integrity sha1-IFVer9IpYnimguWlHVEj54eOzDA=
   dependencies:
     xtend "^4.0.1"
 
@@ -10149,9 +9804,9 @@ react-color@^2.17.0:
     tinycolor2 "^1.4.1"
 
 react-dev-utils@^9.0.0:
-  version "9.0.4"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-dev-utils/-/react-dev-utils-9.0.4.tgz#5c71a8e8afdec0232c44d4e049d21baa437a92af"
-  integrity sha1-XHGo6K/ewCMsRNTgSdIbqkN6kq8=
+  version "9.1.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-dev-utils/-/react-dev-utils-9.1.0.tgz#3ad2bb8848a32319d760d0a84c56c14bdaae5e81"
+  integrity sha1-OtK7iEijIxnXYNCoTFbBS9quXoE=
   dependencies:
     "@babel/code-frame" "7.5.5"
     address "1.1.2"
@@ -10172,7 +9827,7 @@ react-dev-utils@^9.0.0:
     loader-utils "1.2.3"
     open "^6.3.0"
     pkg-up "2.0.0"
-    react-error-overlay "^6.0.2"
+    react-error-overlay "^6.0.3"
     recursive-readdir "2.2.2"
     shell-quote "1.7.2"
     sockjs-client "1.4.0"
@@ -10193,19 +9848,19 @@ react-docgen@^4.1.0:
     recast "^0.17.3"
 
 react-dom@^16.10.1, react-dom@^16.8.3:
-  version "16.10.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-dom/-/react-dom-16.10.1.tgz#479a6511ba34a429273c213cbc2a9ac4d296dac1"
-  integrity sha1-R5plEbo0pCknPCE8vCqaxNKW2sE=
+  version "16.10.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-dom/-/react-dom-16.10.2.tgz#4840bce5409176bc3a1f2bd8cb10b92db452fda6"
+  integrity sha1-SEC85UCRdrw6HyvYyxC5LbRS/aY=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.16.1"
+    scheduler "^0.16.2"
 
-react-draggable@^3.3.2:
-  version "3.3.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-draggable/-/react-draggable-3.3.2.tgz#966ef1d90f2387af3c2d8bd3516f601ea42ca359"
-  integrity sha1-lm7x2Q8jh688LYvTUW9gHqQso1k=
+react-draggable@^4.0.3:
+  version "4.0.3"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-draggable/-/react-draggable-4.0.3.tgz#6b9f76f66431c47b9070e9b805bbc520df8ca481"
+  integrity sha1-a5929mQxxHuQcOm4BbvFIN+MpIE=
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.0"
@@ -10218,12 +9873,12 @@ react-element-to-jsx-string@^14.0.2:
     "@base2/pretty-print-object" "^1.0.0"
     is-plain-object "3.0.0"
 
-react-error-overlay@^6.0.2:
-  version "6.0.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-error-overlay/-/react-error-overlay-6.0.2.tgz#642bd6157c6a4b6e9ca4a816f7ed30b868c47f81"
-  integrity sha1-ZCvWFXxqS26cpKgW9+0wuGjEf4E=
+react-error-overlay@^6.0.3:
+  version "6.0.3"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
+  integrity sha1-w3jEsKIeiLLhWaPmKy9TH9Y79g0=
 
-react-fast-compare@2.0.4:
+react-fast-compare@^2.0.4:
   version "2.0.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha1-6EtNRVsP7BE+BALDKTUnFRlvgfk=
@@ -10239,15 +9894,15 @@ react-focus-lock@^1.18.3:
     react-clientside-effect "^1.2.0"
 
 react-helmet-async@^1.0.2:
-  version "1.0.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-helmet-async/-/react-helmet-async-1.0.3.tgz#68a176dd266c2caf63762879c573a866b89a2098"
-  integrity sha1-aKF23SZsLK9jdih5xXOoZriaIJg=
+  version "1.0.4"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-helmet-async/-/react-helmet-async-1.0.4.tgz#079ef10b7fefcaee6240fefd150711e62463cc97"
+  integrity sha1-B57xC3/vyu5iQP79FQcR5iRjzJc=
   dependencies:
-    "@babel/runtime" "7.3.4"
-    invariant "2.2.4"
-    prop-types "15.7.2"
-    react-fast-compare "2.0.4"
-    shallowequal "1.1.0"
+    "@babel/runtime" "^7.3.4"
+    invariant "^2.2.4"
+    prop-types "^15.7.2"
+    react-fast-compare "^2.0.4"
+    shallowequal "^1.1.0"
 
 react-hotkeys@2.0.0-pre4:
   version "2.0.0-pre4"
@@ -10263,24 +9918,10 @@ react-input-autosize@^2.2.2:
   dependencies:
     prop-types "^15.5.8"
 
-react-inspector@^3.0.2:
-  version "3.0.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-inspector/-/react-inspector-3.0.2.tgz#c530a06101f562475537e47df428e1d7aff16ed8"
-  integrity sha1-xTCgYQH1YkdVN+R99Cjh16/xbtg=
-  dependencies:
-    babel-runtime "^6.26.0"
-    is-dom "^1.0.9"
-    prop-types "^15.6.1"
-
-react-is@^16.10.2, react-is@^16.8.4, react-is@^16.8.6, react-is@^16.9.0:
+react-is@^16.10.2, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6, react-is@^16.9.0:
   version "16.10.2"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-is/-/react-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"
   integrity sha1-mEEg/U0WgA6ac4IIqx+6Qi0jtas=
-
-react-is@^16.7.0, react-is@^16.8.1:
-  version "16.10.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-is/-/react-is-16.10.1.tgz#0612786bf19df406502d935494f0450b40b8294f"
-  integrity sha1-BhJ4a/Gd9AZQLZNUlPBFC0C4KU8=
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -10288,14 +9929,14 @@ react-lifecycles-compat@^3.0.4:
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
 react-popper-tooltip@^2.8.3:
-  version "2.8.3"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-popper-tooltip/-/react-popper-tooltip-2.8.3.tgz#1c63e7473a96362bd93be6c94fa404470a265197"
-  integrity sha1-HGPnRzqWNivZO+bJT6QERwomUZc=
+  version "2.9.1"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-popper-tooltip/-/react-popper-tooltip-2.9.1.tgz#cc602c89a937aea378d9e2675b1ce62805beb4f6"
+  integrity sha1-zGAsiak3rqN42eJnWxzmKAW+tPY=
   dependencies:
-    "@babel/runtime" "^7.4.5"
-    react-popper "^1.3.3"
+    "@babel/runtime" "^7.6.3"
+    react-popper "^1.3.4"
 
-react-popper@^1.3.3:
+react-popper@^1.3.4:
   version "1.3.4"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-popper/-/react-popper-1.3.4.tgz#f0cd3b0d30378e1f663b0d79bcc8614221652ced"
   integrity sha1-8M07DTA3jh9mOw15vMhhQiFlLO0=
@@ -10333,20 +9974,10 @@ react-select@^3.0.0:
     react-input-autosize "^2.2.2"
     react-transition-group "^2.2.1"
 
-react-sizeme@^2.5.2:
+react-sizeme@^2.5.2, react-sizeme@^2.6.7:
   version "2.6.8"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-sizeme/-/react-sizeme-2.6.8.tgz#a9d7062bca3c309649cb8b09bb1ef2480592b332"
   integrity sha1-qdcGK8o8MJZJy4sJux7ySAWSszI=
-  dependencies:
-    element-resize-detector "^1.1.15"
-    invariant "^2.2.4"
-    shallowequal "^1.1.0"
-    throttle-debounce "^2.1.0"
-
-react-sizeme@^2.6.7:
-  version "2.6.7"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react-sizeme/-/react-sizeme-2.6.7.tgz#231339ce8821ac2c26424c791e0027f89dae3e90"
-  integrity sha1-IxM5zoghrCwmQkx5HgAn+J2uPpA=
   dependencies:
     element-resize-detector "^1.1.15"
     invariant "^2.2.4"
@@ -10393,9 +10024,9 @@ react-transition-group@^2.2.1:
     react-lifecycles-compat "^3.0.4"
 
 react@^16.10.1, react@^16.3.0, react@^16.8.3:
-  version "16.10.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react/-/react-16.10.1.tgz#967c1e71a2767dfa699e6ba702a00483e3b0573f"
-  integrity sha1-lnwecaJ2ffppnmunAqAEg+OwVz8=
+  version "16.10.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
+  integrity sha1-pe3lzdXFNvdFFzyNpHvaZHl6TPA=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -10610,7 +10241,7 @@ regenerator-runtime@^0.11.0:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha1-vgWtf5v30i4Fb5cmzuUBf78Z4uk=
 
-regenerator-runtime@^0.12.0, regenerator-runtime@^0.12.1:
+regenerator-runtime@^0.12.1:
   version "0.12.1"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
   integrity sha1-+hpxVEdkwDb4xJsToIsllMn4oN4=
@@ -11066,14 +10697,6 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
-scheduler@^0.16.1:
-  version "0.16.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/scheduler/-/scheduler-0.16.1.tgz#a6fb6ddec12dc2119176e6eb54ecfe69a9eba8df"
-  integrity sha1-pvtt3sEtwhGRdubrVOz+aanrqN8=
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-
 scheduler@^0.16.2:
   version "0.16.2"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/scheduler/-/scheduler-0.16.2.tgz#f74cd9d33eff6fc554edfb79864868e4819132c1"
@@ -11091,10 +10714,10 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-schema-utils@^2.0.0, schema-utils@^2.1.0:
-  version "2.4.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/schema-utils/-/schema-utils-2.4.1.tgz#e89ade5d056dc8bcaca377574bb4a9c4e1b8be56"
-  integrity sha1-6JreXQVtyLyso3dXS7SpxOG4vlY=
+schema-utils@^2.0.0, schema-utils@^2.1.0, schema-utils@^2.4.1:
+  version "2.5.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/schema-utils/-/schema-utils-2.5.0.tgz#8f254f618d402cc80257486213c8970edfd7c22f"
+  integrity sha1-jyVPYY1ALMgCV0hiE8iXDt/Xwi8=
   dependencies:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
@@ -11242,7 +10865,7 @@ shallow-equal@^1.1.0:
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/shallow-equal/-/shallow-equal-1.2.0.tgz#fd828d2029ff4e19569db7e19e535e94e2d1f5cc"
   integrity sha1-/YKNICn/ThlWnbfhnlNelOLR9cw=
 
-shallowequal@1.1.0, shallowequal@^1.1.0:
+shallowequal@^1.1.0:
   version "1.1.0"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha1-GI1SHelbkIdAT9TctosT3wrk5/g=
@@ -11549,11 +11172,11 @@ stack-utils@^1.0.1:
   integrity sha1-M+ujiXeIVYvr/C2wWdwVjsNs67g=
 
 start-server-and-test@^1.10.5:
-  version "1.10.5"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/start-server-and-test/-/start-server-and-test-1.10.5.tgz#6078d665a93372e74d5e7e5ece87634c81926077"
-  integrity sha1-YHjWZakzcudNXn5ezodjTIGSYHc=
+  version "1.10.6"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/start-server-and-test/-/start-server-and-test-1.10.6.tgz#43355173e49a165b0ce9e928733b574bb877379c"
+  integrity sha1-QzVRc+SaFlsM6ekocztXS7h3N5w=
   dependencies:
-    bluebird "3.7.0"
+    bluebird "3.7.1"
     check-more-types "2.24.0"
     debug "4.1.1"
     execa "2.1.0"
@@ -11939,19 +11562,6 @@ tar@^4, tar@^4.4.10, tar@^4.4.8:
     safe-buffer "^5.1.2"
     yallist "^3.0.3"
 
-telejson@^2.2.2:
-  version "2.2.2"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/telejson/-/telejson-2.2.2.tgz#d61d721d21849a6e4070d547aab302a9bd22c720"
-  integrity sha1-1h1yHSGEmm5AcNVHqrMCqb0ixyA=
-  dependencies:
-    global "^4.3.2"
-    is-function "^1.0.1"
-    is-regex "^1.0.4"
-    is-symbol "^1.0.2"
-    isobject "^3.0.1"
-    lodash "^4.17.11"
-    memoizerific "^1.11.3"
-
 telejson@^3.0.2:
   version "3.0.3"
   resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/telejson/-/telejson-3.0.3.tgz#442af55f78d791d3744c9e7a696be6cdf789a4b5"
@@ -11997,9 +11607,9 @@ terser-webpack-plugin@^1.2.4, terser-webpack-plugin@^1.4.1:
     worker-farm "^1.7.0"
 
 terser@^4.1.2:
-  version "4.3.4"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/terser/-/terser-4.3.4.tgz#ad91bade95619e3434685d69efa621a5af5f877d"
-  integrity sha1-rZG63pVhnjQ0aF1p76Yhpa9fh30=
+  version "4.3.9"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/terser/-/terser-4.3.9.tgz#e4be37f80553d02645668727777687dad26bbca8"
+  integrity sha1-5L43+AVT0CZFZocnd3aH2tJrvKg=
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"
@@ -12278,20 +11888,12 @@ uglify-js@3.4.x:
     commander "~2.19.0"
     source-map "~0.6.1"
 
-uglify-js@^3.1.4:
-  version "3.6.1"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/uglify-js/-/uglify-js-3.6.1.tgz#ae7688c50e1bdcf2f70a0e162410003cf9798311"
-  integrity sha1-rnaIxQ4b3PL3Cg4WJBAAPPl5gxE=
+uglify-js@^3.1.4, uglify-js@^3.5.1:
+  version "3.6.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/uglify-js/-/uglify-js-3.6.2.tgz#fd8048c86d990ddd29fe99d3300e0cb329103f4d"
+  integrity sha1-/YBIyG2ZDd0p/pnTMA4MsykQP00=
   dependencies:
     commander "2.20.0"
-    source-map "~0.6.1"
-
-uglify-js@^3.5.1:
-  version "3.6.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/uglify-js/-/uglify-js-3.6.0.tgz#704681345c53a8b2079fb6cec294b05ead242ff5"
-  integrity sha1-cEaBNFxTqLIHn7bOwpSwXq0kL/U=
-  dependencies:
-    commander "~2.20.0"
     source-map "~0.6.1"
 
 uid-number@0.0.6:
@@ -12530,13 +12132,13 @@ urix@^0.1.0:
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
 url-loader@^2.0.1:
-  version "2.1.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/url-loader/-/url-loader-2.1.0.tgz#bcc1ecabbd197e913eca23f5e0378e24b4412961"
-  integrity sha1-vMHsq70ZfpE+yiP14DeOJLRBKWE=
+  version "2.2.0"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/url-loader/-/url-loader-2.2.0.tgz#af321aece1fd0d683adc8aaeb27829f29c75b46e"
+  integrity sha1-rzIa7OH9DWg63Iqusngp8px1tG4=
   dependencies:
     loader-utils "^1.2.3"
     mime "^2.4.4"
-    schema-utils "^2.0.0"
+    schema-utils "^2.4.1"
 
 url-parse-lax@^3.0.0:
   version "3.0.0"
@@ -12785,9 +12387,9 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-map "~0.6.1"
 
 webpack@^4.33.0, webpack@^4.38.0:
-  version "4.41.0"
-  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/webpack/-/webpack-4.41.0.tgz#db6a254bde671769f7c14e90a1a55e73602fc70b"
-  integrity sha1-22olS95nF2n3wU6QoaVec2Avxws=
+  version "4.41.2"
+  resolved "https://repo.artifacts.weather.com/api/npm/web-decoupling-npm-virtual/webpack/-/webpack-4.41.2.tgz#c34ec76daa3a8468c9b61a50336d8e3303dce74e"
+  integrity sha1-w07Hbao6hGjJthpQM22OMwPc504=
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"

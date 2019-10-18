@@ -1,6 +1,6 @@
 import React from 'react';
 import { text, boolean } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
+// import { action } from '@storybook/addon-actions';
 import { Icon } from 'atom/Icon/Icon';
 import { Button } from './Button';
 import readme from './README.md';
@@ -16,7 +16,7 @@ export const button = () => {
     return (
       <Button
         disabled={disabled}
-        onClick={action('button-click')}
+        onClick={() => console.log('Click', event)}
       >
         {btnText}
       </Button>
